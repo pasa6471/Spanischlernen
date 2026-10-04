@@ -3,32 +3,39 @@
 :root{--bg:#fff9ef;--s:#fff;--ink:#1d2140;--mu:#646a86;--ac:#0b7a82;--on:#fff;--y:#f4b41a;--r:#d6246e;--ok:#0b7a82;--no:#d6246e;--ln:#e6dcc8;color-scheme:light dark}
 @media(prefers-color-scheme:dark){:root{--bg:#14172b;--s:#1d2140;--ink:#f6efe2;--mu:#a2a8c6;--ac:#35c6c6;--on:#14172b;--y:#f7c84a;--r:#ff6aa8;--ok:#35c6c6;--no:#ff6aa8;--ln:#2d3358}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 body::before{content:'';position:fixed;top:0;left:0;right:0;z-index:5;height:calc(8px + env(safe-area-inset-top));background:repeating-linear-gradient(90deg,var(--ac) 0 30px,var(--y) 30px 38px,var(--r) 38px 44px,var(--y) 44px 52px)}
 main{max-width:560px;margin:auto;padding:calc(30px + env(safe-area-inset-top)) 16px 16px}
-h1{font:800 2.4rem/1.1 Rockwell,'Roboto Slab',Cambria,Georgia,serif;margin:.1em 0 .2em;letter-spacing:-.01em}
+h1{font:800 2.4rem/1.1 Rockwell,'Roboto Slab',Cambria,Georgia,serif;margin:.1em 0 .5em;letter-spacing:-.01em}
+h1::after{content:'';display:block;width:8px;height:8px;margin:14px 0 0 4px;background:var(--y);transform:rotate(45deg);box-shadow:16px 0 var(--ac),32px 0 var(--r)}
+.arch h1::after{margin:14px auto 0;position:relative;left:-16px}
 .mu{color:var(--mu)}.ok{color:var(--ok)}.no{color:var(--no)}.ex{font:1.25rem/1.5 Georgia,serif;margin:.4em 0 .7em}
-.card{background:var(--s);border:1px solid var(--ln);border-radius:16px;padding:18px;margin:12px 0}
-.arch{border-radius:140px 140px 16px 16px;padding:46px 22px 20px;text-align:center;border:2px solid var(--ink)}
-.arch h1{font-size:3rem;margin:.05em 0 .3em}.left{text-align:left}
-details.card{padding:14px 18px}summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
-details details{margin-top:10px;border-top:1px solid var(--ln);padding-top:10px}details details summary{color:var(--ac);font-weight:600}
+.card{background:var(--s);border:1.5px solid var(--ink);border-radius:30px 30px 10px 10px;padding:18px 20px;margin:14px 0}
+.arch{border-radius:150px 150px 10px 10px;padding:48px 22px 20px;text-align:center;box-shadow:0 6px 0 var(--y)}
+.arch h1{font-size:3.1rem;margin:.05em 0 .4em}.left{text-align:left}
+details.card{padding:14px 20px;border-radius:24px 24px 8px 8px;border-width:1px;border-color:var(--ln)}details.card[open]{border-color:var(--ink);border-width:1.5px}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px}summary::-webkit-details-marker{display:none}
+summary .n{flex:none;min-width:32px;height:32px;display:grid;place-items:center;background:var(--y);color:#1d2140;font-size:.78rem;font-weight:700;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+summary .t{flex:1}
+details details{margin-top:10px;border-top:1px dashed var(--ln);padding-top:10px}details details summary{color:var(--ac);font-weight:600}
 button,input{font:inherit;color:var(--ink)}
-button{border:1px solid var(--ln);background:var(--s);padding:10px 15px;border-radius:12px;margin:4px 6px 4px 0;cursor:pointer}
-input{width:100%;padding:12px;border:1px solid var(--ln);border-radius:12px;background:var(--bg);margin:8px 0}
-.pri{background:var(--ac);color:var(--on);border-color:var(--ac);width:100%;margin:10px 0;font-weight:600}
-button.ok{border-color:var(--ok)}button.no{border-color:var(--no)}
-.row{display:flex;gap:8px;align-items:center}.row button{flex:1;margin:4px 0}.row input{flex:3}
-.seg{display:flex;margin:10px 0}.seg button{flex:1;margin:0;border-radius:0}.seg button:first-child{border-radius:12px 0 0 12px}.seg button:last-child{border-radius:0 12px 12px 0}.seg .on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.5px solid var(--mu);margin-left:6px}.dot.ok{background:var(--y);border-color:var(--y)}
-.b{padding:10px 14px;border-radius:16px;margin:8px 0;max-width:88%}.b.user{background:var(--ac);color:var(--on);margin-left:auto}.b.assistant{background:var(--s);border:1px solid var(--ln)}small{display:block;color:var(--mu);margin-top:6px}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--s);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;border:0;border-radius:0;margin:0;background:none;padding:17px 2px;font-size:.88rem}nav .on{font-weight:700;box-shadow:inset 0 4px var(--y)}
-button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+button{border:1.5px solid var(--ink);background:var(--s);padding:9px 16px;border-radius:999px;margin:4px 6px 4px 0;cursor:pointer}
+input{width:100%;padding:12px 16px;border:1.5px solid var(--ink);border-radius:999px;background:var(--bg);margin:8px 0}
+.pri{background:var(--ac);color:var(--on);border-color:var(--ink);width:100%;margin:10px 0;font-weight:600;box-shadow:0 4px 0 var(--ink)}
+.pri:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+button.ok{border-color:var(--ok);color:var(--ok)}button.no{border-color:var(--no);color:var(--no)}
+.row{display:flex;gap:8px;align-items:center}.row button{flex:1;margin:4px 0}.row input{flex:3}.row .pri{width:auto}
+.seg{display:flex;margin:10px 0;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden}.seg button{flex:1;margin:0;border:0;border-radius:0;background:none}.seg .on{background:var(--ink);color:var(--bg)}
+.dot{flex:none;width:11px;height:11px;border:1.5px solid var(--mu);transform:rotate(45deg)}.dot.ok{background:var(--r);border-color:var(--r)}
+.b{padding:10px 16px;border-radius:22px 22px 22px 4px;margin:8px 0;max-width:88%;border:1.5px solid var(--ink);background:var(--s)}.b.user{background:var(--ac);color:var(--on);margin-left:auto;border-radius:22px 22px 4px 22px}small{display:block;color:var(--mu);margin-top:6px}.b.user small{color:inherit}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--s);border-top:1.5px solid var(--ink);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;border-radius:0;margin:0;background:none;padding:18px 2px 14px;font-size:.88rem;position:relative}nav .on{font-weight:700}
+nav .on::after{content:'';position:absolute;left:50%;top:7px;width:8px;height:8px;margin-left:-4px;background:var(--y);transform:rotate(45deg);outline:1.5px solid var(--ink)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
 </style></head><body><main id="v"></main><nav id="n"></nav>
 <script>
 const $=s=>document.querySelector(s),V=$('#v');
-let W=[],S=JSON.parse(localStorage.es||'{}'),K=localStorage.key||'',cur,rev=0,fl='alle',um='hoeren',res='',tw,H=[];
+let W=[],S=JSON.parse(localStorage.es||'{}'),K=localStorage.getItem('pk')||'',cur,rev=0,fl='alle',um='hoeren',res='',tw,H=[];
 const sv=()=>localStorage.es=JSON.stringify(S),D=864e5,IV=[1,3,7,16,40];
 const nm=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,'').split(/\s+/).filter(Boolean);
 const say=t=>{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t),vs=speechSynthesis.getVoices();u.lang='es-MX';u.rate=.85;const v=vs.find(v=>v.lang.replace('_','-')=='es-MX')||vs.find(v=>v.lang.startsWith('es'));if(v)u.voice=v;speechSynthesis.speak(u)};
@@ -43,7 +50,7 @@ function lernen(){cur=cur||nextW();const w=cur,g=Object.values(S).filter(x=>x.lv
 V.innerHTML=`<p class=mu>${g} von ${W.length} Wörtern gelernt</p><div class="card arch"><p class=mu>${w.p}, Rang ${W.indexOf(w)+1} von ${W.length}</p><h1>${w.w}</h1><button data-s="${w.w}">Wort anhören</button><p class=ex>${w.e}</p><button data-s="${w.e}">Satz anhören</button>${rev?`<p><b>${w.t}</b></p><p class=mu>${w.d}</p>`:''}<div class=left>${gr(w)}</div></div>`+(rev?`<div class=row><button class=no onclick=ans(0)>Nochmal</button><button class=ok onclick=ans(1)>Gewusst</button></div>`:`<button class=pri onclick="rev=1;lernen()">Übersetzung zeigen</button>`)}
 function ans(k){const w=cur.w,lv=k?(S[w]?S[w].lv:0)+1:0;S[w]={lv,due:Date.now()+(k?IV[Math.min(lv-1,4)]*D:6e5)};sv();cur=null;rev=0;lernen()}
 function woerter(){const k=w=>S[w.w]&&S[w.w].lv>=1;
-V.innerHTML=`<h1>Wörter</h1><div class=seg>${['alle','offen','gelernt'].map(f=>`<button class="${f==fl?'on':''}" onclick="fl='${f}';woerter()">${f}</button>`).join('')}</div>`+W.map((w,i)=>[w,i]).filter(([w])=>fl=='alle'||(fl=='gelernt')==!!k(w)).map(([w,i])=>`<details class=card><summary><span class=mu>${i+1}</span>&nbsp; <b>${w.w}</b> &nbsp;${w.t}<i class="dot ${k(w)?'ok':''}"></i></summary><p class=ex>${w.e}</p><p class=mu>${w.d}</p><button data-s="${w.e}">Satz anhören</button>${gr(w)}</details>`).join('')}
+V.innerHTML=`<h1>Wörter</h1><div class=seg>${['alle','offen','gelernt'].map(f=>`<button class="${f==fl?'on':''}" onclick="fl='${f}';woerter()">${f}</button>`).join('')}</div>`+W.map((w,i)=>[w,i]).filter(([w])=>fl=='alle'||(fl=='gelernt')==!!k(w)).map(([w,i])=>`<details class=card><summary><span class=n>${i+1}</span><span class=t><b>${w.w}</b> <span class=mu>${w.t}</span></span><i class="dot ${k(w)?'ok':''}"></i></summary><p class=ex>${w.e}</p><p class=mu>${w.d}</p><button data-s="${w.e}">Satz anhören</button>${gr(w)}</details>`).join('')}
 function chk(said){const c=cmp(tw.e,said);res=`<p class=ex>${c.h}</p><p class=mu>${tw.d}</p>`+(c.miss.length?`<p>Abweichungen: <b>${c.miss.join(', ')}</b>. Höre den Satz noch einmal und achte auf diese Wörter.</p>`:'<p class=ok><b>Richtig.</b></p>')+(um=='sprechen'?`<p class=mu>Erkannt: ${said}</p>`+TP.filter(x=>x[0].test(tw.e)).map(x=>`<p class=mu>${x[1]}</p>`).join(''):'');ueben()}
 function ueben(nw){if(nw||!tw){tw=W[Math.floor(Math.random()*W.length)];res=''}const h=um=='hoeren';
 V.innerHTML=`<h1>Üben</h1><div class=seg>${[['hoeren','Hören'],['sprechen','Sprechen']].map(([k,t])=>`<button class="${k==um?'on':''}" onclick="um='${k}';ueben(1)">${t}</button>`).join('')}</div><div class=card>`+(h?`<button class=pri data-s="${tw.e}">Satz abspielen</button><input id=i placeholder="Was hast du gehört?" autocapitalize=off><button onclick="chk($('#i').value)">Prüfen</button>`:`<p class=ex>${tw.e}</p><p class=mu>${tw.d}</p><button data-s="${tw.e}">Vorbild anhören</button><button class=pri onclick="listen(chk)">Satz sprechen</button>`)+`<div>${res}</div></div><button onclick="ueben(1)">Nächster Satz</button>`}
@@ -52,8 +59,8 @@ function chat(){V.innerHTML=`<h1>Gespräch</h1>`+(K?'':`<div class=card><p>Für 
 async function send(){const t=$('#m').value.trim();if(!t||!K)return;H.push({role:'user',content:t});chat();
 try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':K,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-5-5',max_tokens:400,system:SYS(),messages:H.map(m=>({role:m.role,content:m.content}))})});const j=await r.json();if(!r.ok)throw new Error(j.error&&j.error.message);const x=j.content[0].text,[es,co]=x.split('||');H.push({role:'assistant',content:x,show:es+(co&&co.trim()?`<small>${co}</small>`:'')});say(es)}catch(e){H.pop();alert('Fehler: '+e.message)}chat()}
 function opt(){V.innerHTML=`<h1>Optionen</h1><div class=card><b>API-Schlüssel</b><p class=mu>Für das Gespräch. Er wird nur in diesem Browser gespeichert.</p><p class="${K?'ok':'mu'}">${K?'Gespeichert: sk-ant-…'+K.slice(-4):'Noch nicht hinterlegt'}</p><input id=k type=password placeholder="sk-ant-..." autocomplete=off autocapitalize=off><div class=row><button onclick="$('#k').type=$('#k').type=='password'?'text':'password'">Anzeigen</button><button class=pri onclick=savek()>Speichern</button></div>${K?`<div class=row><button onclick=testk()>Verbindung testen</button><button class=no onclick=delk()>Entfernen</button></div>`:''}<p id=ks class=mu></p></div><div class=card><b>Lernfortschritt</b><p class=mu>Setzt alle gelernten Wörter zurück.</p><button class=no onclick="confirm('Fortschritt wirklich löschen?')&&(S={},sv(),cur=null,opt())">Zurücksetzen</button></div>`}
-function savek(){const v=$('#k').value.trim();if(!v.startsWith('sk-ant-'))return $('#ks').textContent='Das ist kein Anthropic-Schlüssel. Er beginnt mit sk-ant-.';K=v;localStorage.key=K;opt()}
-function delk(){K='';localStorage.removeItem('key');opt()}
+function savek(){const v=$('#k').value.trim();if(!v.startsWith('sk-ant-'))return $('#ks').textContent='Das ist kein Anthropic-Schlüssel. Er beginnt mit sk-ant-.';K=v;localStorage.setItem('pk',K);opt()}
+function delk(){K='';localStorage.removeItem('pk');opt()}
 async function testk(){const s=$('#ks');s.textContent='Prüfe ...';try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':K,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-5-5',max_tokens:5,messages:[{role:'user',content:'Hi'}]})});s.textContent=r.ok?'Verbindung funktioniert.':'Fehler: '+((await r.json()).error||{}).message}catch(e){s.textContent='Fehler: '+e.message}}
 const T={lernen,woerter,ueben,chat,opt},L={lernen:'Lernen',woerter:'Wörter',ueben:'Üben',chat:'Gespräch',opt:'Optionen'};
 function go(t){T[t]();$('#n').innerHTML=Object.keys(T).map(k=>`<button class="${k==t?'on':''}" onclick="go('${k}')">${L[k]}</button>`).join('')}
