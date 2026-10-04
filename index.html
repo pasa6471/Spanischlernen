@@ -1,0 +1,54 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Palabra</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2740c9"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg">
+<style>
+:root{--bg:#f2f4f7;--s:#fff;--ink:#101828;--mu:#5b6678;--ac:#2740c9;--on:#fff;--ok:#1d8a5b;--no:#c4540a;--ln:#d9dee7;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--s:#161c26;--ink:#e8ecf3;--mu:#8e9ab0;--ac:#8ba0ff;--on:#0d1117;--ok:#43c08a;--no:#f08c4a;--ln:#263042}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+main{max-width:560px;margin:auto;padding:calc(18px + env(safe-area-inset-top)) 16px}
+h1{font:700 2.6rem/1.1 Georgia,'Iowan Old Style',serif;margin:.2em 0 .1em;letter-spacing:-.01em}
+.mu{color:var(--mu)}.ok{color:var(--ok)}.no{color:var(--no)}.ex{font:1.3rem/1.5 Georgia,serif;margin:.2em 0 .6em}
+.card{background:var(--s);border:1px solid var(--ln);border-radius:14px;padding:18px;margin:12px 0}
+details.card{padding:14px 18px}summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+details details{margin-top:10px;border-top:1px solid var(--ln);padding-top:10px}details details summary{color:var(--ac)}
+button,input{font:inherit;color:var(--ink)}
+button{border:1px solid var(--ln);background:var(--s);padding:10px 14px;border-radius:10px;margin:4px 6px 4px 0;cursor:pointer}
+input{width:100%;padding:11px;border:1px solid var(--ln);border-radius:10px;background:var(--s);margin:6px 0}
+.pri{background:var(--ac);color:var(--on);border-color:var(--ac);width:100%;margin:10px 0}
+button.ok{border-color:var(--ok)}button.no{border-color:var(--no)}
+.row{display:flex;gap:8px;align-items:center}.row button{flex:1;margin:4px 0}.row input{flex:3}
+.seg{display:flex;gap:0;margin:10px 0}.seg button{flex:1;margin:0;border-radius:0}.seg button:first-child{border-radius:10px 0 0 10px}.seg button:last-child{border-radius:0 10px 10px 0}.seg .on{background:var(--ink);color:var(--bg)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.5px solid var(--mu);margin-left:6px}.dot.ok{background:var(--ok);border-color:var(--ok)}
+.b{padding:10px 14px;border-radius:14px;margin:8px 0;max-width:88%}.b.user{background:var(--ac);color:var(--on);margin-left:auto}.b.assistant{background:var(--s);border:1px solid var(--ln)}small{display:block;color:var(--mu);margin-top:6px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--s);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;border-radius:0;margin:0;background:none;padding:17px 4px}nav .on{color:var(--ac);font-weight:700;box-shadow:inset 0 3px var(--ac)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+</style></head><body><main id="v"></main><nav id="n"></nav>
+<script>
+const $=s=>document.querySelector(s),V=$('#v');
+let W=[],S=JSON.parse(localStorage.es||'{}'),K=localStorage.key||'',cur,rev=0,fl='alle',um='hoeren',res='',tw,H=[];
+const sv=()=>localStorage.es=JSON.stringify(S),D=864e5,IV=[1,3,7,16,40];
+const nm=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,'').split(/\s+/).filter(Boolean);
+const say=t=>{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t),vs=speechSynthesis.getVoices();u.lang='es-MX';u.rate=.85;const v=vs.find(v=>v.lang.replace('_','-')=='es-MX')||vs.find(v=>v.lang.startsWith('es'));if(v)u.voice=v;speechSynthesis.speak(u)};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b)say(b.dataset.s)});
+function listen(cb){const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R)return alert('Spracherkennung fehlt in diesem Browser. Nutze Chrome (Android) oder Safari.');const r=new R();r.lang='es-MX';r.onresult=e=>cb(e.results[0][0].transcript);r.onerror=e=>alert('Mikrofon: '+e.error);r.start()}
+function cmp(t,said){const a=nm(said),miss=[];const h=t.split(' ').map(w=>{const ok=a.includes(nm(w)[0]);if(!ok)miss.push(w.replace(/[¿?¡!.,]/g,''));return `<span class="${ok?'ok':'no'}">${w}</span>`}).join(' ');return{h,miss}}
+const TP=[[/rr|\br/i,'r am Wortanfang und rr: Zungenspitze rollt.'],[/j|g[ei]/i,'j, ge, gi: hauchiger Laut wie das ch in "ach".'],[/ll|y/i,'ll und y: wie das j in "Jahr".'],[/z|c[ei]/i,'z, ce, ci: einfaches s (Lateinamerika, kein Lispeln).'],[/v/i,'v: wird wie b gesprochen.'],[/h/i,'h: stumm.'],[/ñ/i,'ñ: wie nj in "Anja".'],[/qu|gu[ei]/i,'qu, gue, gui: das u bleibt stumm.']];
+const GP={verbo:'Verben ändern die Endung je nach Person: yo, tú, él/ella, nosotros, ellos/ustedes. Lateinamerika: ustedes statt vosotros.',sustantivo:'Jedes Nomen ist männlich (el) oder weiblich (la). Adjektive passen sich an.',adjetivo:'Adjektive stehen meist hinter dem Nomen und passen sich an Geschlecht und Zahl an.',adverbio:'Adverbien sind unveränderlich und stehen meist beim Verb.',conjunción:'Bindewörter verbinden Sätze und bleiben unverändert.',otros:'Feste Wendung, unverändert.'};
+const gr=w=>`<details><summary>Grammatik</summary><p class=mu>${w.g||GP[w.p]}</p></details>`;
+function nextW(){const n=Date.now();return W.filter(w=>S[w.w]&&S[w.w].due<=n).sort((a,b)=>S[a.w].due-S[b.w].due)[0]||W.find(w=>!S[w.w])||W[0]}
+function lernen(){cur=cur||nextW();const w=cur,g=Object.values(S).filter(x=>x.lv>=1).length;
+V.innerHTML=`<h1>${w.w}</h1><p class=mu>${w.p}, Rang ${W.indexOf(w)+1} von ${W.length}</p><div class=card><p class=ex>${w.e}</p><button data-s="${w.e}">Satz anhören</button><button data-s="${w.w}">Wort anhören</button>${rev?`<p><b>${w.t}</b></p><p class=mu>${w.d}</p>`:''}${gr(w)}</div>`+(rev?`<div class=row><button class=no onclick=ans(0)>Nochmal</button><button class=ok onclick=ans(1)>Gewusst</button></div>`:`<button class=pri onclick="rev=1;lernen()">Übersetzung zeigen</button>`)+`<p class=mu>${g} von ${W.length} Wörtern gelernt</p>`}
+function ans(k){const w=cur.w,lv=k?(S[w]?S[w].lv:0)+1:0;S[w]={lv,due:Date.now()+(k?IV[Math.min(lv-1,4)]*D:6e5)};sv();cur=null;rev=0;lernen()}
+function woerter(){const k=w=>S[w.w]&&S[w.w].lv>=1;
+V.innerHTML=`<h1>Wörter</h1><div class=seg>${['alle','offen','gelernt'].map(f=>`<button class="${f==fl?'on':''}" onclick="fl='${f}';woerter()">${f}</button>`).join('')}</div>`+W.map((w,i)=>[w,i]).filter(([w])=>fl=='alle'||(fl=='gelernt')==!!k(w)).map(([w,i])=>`<details class=card><summary><span class=mu>${i+1}</span>&nbsp; <b>${w.w}</b> &nbsp;${w.t}<i class="dot ${k(w)?'ok':''}"></i></summary><p class=ex>${w.e}</p><p class=mu>${w.d}</p><button data-s="${w.e}">Satz anhören</button>${gr(w)}</details>`).join('')}
+function chk(said){const c=cmp(tw.e,said);res=`<p class=ex>${c.h}</p><p class=mu>${tw.d}</p>`+(c.miss.length?`<p>Abweichungen: <b>${c.miss.join(', ')}</b>. Höre den Satz noch einmal und achte auf diese Wörter.</p>`:'<p class=ok><b>Richtig.</b></p>')+(um=='sprechen'?`<p class=mu>Erkannt: ${said}</p>`+TP.filter(x=>x[0].test(tw.e)).map(x=>`<p class=mu>${x[1]}</p>`).join(''):'');ueben()}
+function ueben(nw){if(nw||!tw){tw=W[Math.floor(Math.random()*W.length)];res=''}const h=um=='hoeren';
+V.innerHTML=`<h1>Üben</h1><div class=seg>${[['hoeren','Hören'],['sprechen','Sprechen']].map(([k,t])=>`<button class="${k==um?'on':''}" onclick="um='${k}';ueben(1)">${t}</button>`).join('')}</div><div class=card>`+(h?`<button class=pri data-s="${tw.e}">Satz abspielen</button><input id=i placeholder="Was hast du gehört?" autocapitalize=off><button onclick="chk($('#i').value)">Prüfen</button>`:`<p class=ex>${tw.e}</p><p class=mu>${tw.d}</p><button data-s="${tw.e}">Vorbild anhören</button><button class=pri onclick="listen(chk)">Satz sprechen</button>`)+`<div>${res}</div></div><button onclick="ueben(1)">Nächster Satz</button>`}
+const SYS=()=>`Du bist Gesprächspartner für Spanisch (lateinamerikanisch) für einen Lernenden auf Niveau A2. Antworte in kurzen, einfachen spanischen Sätzen zu Alltagsthemen und stelle am Ende eine Frage. Nutze bevorzugt diese Wörter: ${W.slice(0,40).map(w=>w.w).join(', ')}. Format: zuerst deine spanische Antwort, dann das Zeichen ||, dann eine kurze deutsche Korrektur der Fehler in der letzten Nachricht des Lernenden mit Erklärung (nach || leer lassen, wenn fehlerfrei).`;
+function chat(){V.innerHTML=`<h1>Gespräch</h1>`+(K?'':`<div class=card><p>Für das Gespräch brauchst du einen Anthropic-API-Schlüssel. Er wird nur in diesem Browser gespeichert.</p><input id=k placeholder="sk-ant-..."><button onclick="K=$('#k').value.trim();localStorage.key=K;chat()">Speichern</button></div>`)+(H.length?'':'<p class=mu>Schreibe oder sprich einen ersten Satz auf Spanisch, zum Beispiel: Hola, ¿cómo estás?</p>')+H.map(m=>`<div class="b ${m.role}">${m.role=='user'?m.content:m.show}</div>`).join('')+`<div class=row><input id=m placeholder="Auf Spanisch schreiben" autocapitalize=off><button onclick="listen(t=>{$('#m').value=t;send()})">Mikro</button><button class=pri onclick=send()>Senden</button></div>`}
+async function send(){const t=$('#m').value.trim();if(!t||!K)return;H.push({role:'user',content:t});chat();
+try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':K,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-5-5',max_tokens:400,system:SYS(),messages:H.map(m=>({role:m.role,content:m.content}))})});const j=await r.json();if(!r.ok)throw new Error(j.error&&j.error.message);const x=j.content[0].text,[es,co]=x.split('||');H.push({role:'assistant',content:x,show:es+(co&&co.trim()?`<small>${co}</small>`:'')});say(es)}catch(e){H.pop();alert('Fehler: '+e.message)}chat()}
+const T={lernen,woerter,ueben,chat},L={lernen:'Lernen',woerter:'Wörter',ueben:'Üben',chat:'Gespräch'};
+function go(t){T[t]();$('#n').innerHTML=Object.keys(T).map(k=>`<button class="${k==t?'on':''}" onclick="go('${k}')">${L[k]}</button>`).join('')}
+fetch('words.json').then(r=>r.json()).then(d=>{W=d;go('lernen')});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>

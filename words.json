@@ -1,0 +1,308 @@
+[
+{
+"w": "ser",
+"t": "sein (dauerhaft)",
+"p": "verbo",
+"e": "Soy de México.",
+"d": "Ich komme aus Mexiko.",
+"g": "Ser für Identität, Herkunft, Beruf, Eigenschaften: soy, eres, es, somos, son. Für Zustände und Orte nimmt man estar."
+},
+{
+"w": "estar",
+"t": "sein (Zustand, Ort)",
+"p": "verbo",
+"e": "Estoy en casa ahora.",
+"d": "Ich bin jetzt zu Hause.",
+"g": "Estar für Orte und vorübergehende Zustände. Está cansado = er ist gerade müde; es aburrido = er ist von Natur aus langweilig."
+},
+{
+"w": "tener",
+"t": "haben",
+"p": "verbo",
+"e": "Tengo dos hermanos.",
+"d": "Ich habe zwei Geschwister.",
+"g": "Tener que + Infinitiv = müssen: Tengo que trabajar. Auch fürs Alter: Tengo treinta años."
+},
+{
+"w": "hacer",
+"t": "machen, tun",
+"p": "verbo",
+"e": "¿Qué haces hoy?",
+"d": "Was machst du heute?"
+},
+{
+"w": "ir",
+"t": "gehen, fahren",
+"p": "verbo",
+"e": "Voy a comprar pan.",
+"d": "Ich werde Brot kaufen.",
+"g": "Ir a + Infinitiv bildet die nahe Zukunft: voy a, vas a, va a, vamos a, van a."
+},
+{
+"w": "poder",
+"t": "können",
+"p": "verbo",
+"e": "¿Puedes ayudarme?",
+"d": "Kannst du mir helfen?",
+"g": "Stammvokal o wird zu ue (puedo, puedes), bei nosotros nicht: podemos. Danach steht der Infinitiv."
+},
+{
+"w": "decir",
+"t": "sagen",
+"p": "verbo",
+"e": "Dice que viene mañana.",
+"d": "Er sagt, dass er morgen kommt."
+},
+{
+"w": "querer",
+"t": "wollen, mögen",
+"p": "verbo",
+"e": "Quiero un café, por favor.",
+"d": "Ich möchte einen Kaffee, bitte.",
+"g": "Quiero que + subjuntivo, wenn eine andere Person handeln soll: Quiero que vengas. Gleiche Person: Quiero venir (Infinitiv)."
+},
+{
+"w": "saber",
+"t": "wissen, können",
+"p": "verbo",
+"e": "No sé dónde está.",
+"d": "Ich weiß nicht, wo es ist.",
+"g": "Saber = Wissen oder gelernte Fähigkeit (Sé nadar). Conocer = Personen und Orte kennen."
+},
+{
+"w": "ver",
+"t": "sehen",
+"p": "verbo",
+"e": "Veo la tele por la noche.",
+"d": "Abends sehe ich fern."
+},
+{
+"w": "dar",
+"t": "geben",
+"p": "verbo",
+"e": "Te doy mi número.",
+"d": "Ich gebe dir meine Nummer."
+},
+{
+"w": "venir",
+"t": "kommen",
+"p": "verbo",
+"e": "¿Vienes a la fiesta?",
+"d": "Kommst du zur Party?"
+},
+{
+"w": "hablar",
+"t": "sprechen",
+"p": "verbo",
+"e": "Hablo un poco de español.",
+"d": "Ich spreche ein bisschen Spanisch."
+},
+{
+"w": "comer",
+"t": "essen",
+"p": "verbo",
+"e": "Comemos a las dos.",
+"d": "Wir essen um zwei."
+},
+{
+"w": "vivir",
+"t": "leben, wohnen",
+"p": "verbo",
+"e": "Vivo en Berlín.",
+"d": "Ich wohne in Berlin."
+},
+{
+"w": "necesitar",
+"t": "brauchen",
+"p": "verbo",
+"e": "Necesito más tiempo.",
+"d": "Ich brauche mehr Zeit."
+},
+{
+"w": "casa",
+"t": "Haus, Zuhause",
+"p": "sustantivo",
+"e": "Mi casa está cerca.",
+"d": "Mein Haus ist in der Nähe."
+},
+{
+"w": "tiempo",
+"t": "Zeit, Wetter",
+"p": "sustantivo",
+"e": "No tengo tiempo hoy.",
+"d": "Ich habe heute keine Zeit.",
+"g": "El tiempo = Zeit oder Wetter. Hace buen tiempo = das Wetter ist schön."
+},
+{
+"w": "día",
+"t": "Tag",
+"p": "sustantivo",
+"e": "Buen día, ¿cómo estás?",
+"d": "Guten Tag, wie geht's?",
+"g": "El día ist männlich, obwohl es auf -a endet. Gruß: buenos días, buenas tardes, buenas noches."
+},
+{
+"w": "año",
+"t": "Jahr",
+"p": "sustantivo",
+"e": "Vivo aquí hace un año.",
+"d": "Ich wohne seit einem Jahr hier."
+},
+{
+"w": "persona",
+"t": "Person",
+"p": "sustantivo",
+"e": "Es una persona muy amable.",
+"d": "Er ist ein sehr freundlicher Mensch.",
+"g": "Persona ist immer weiblich, auch für Männer."
+},
+{
+"w": "trabajo",
+"t": "Arbeit",
+"p": "sustantivo",
+"e": "Mi trabajo empieza a las ocho.",
+"d": "Meine Arbeit beginnt um acht."
+},
+{
+"w": "agua",
+"t": "Wasser",
+"p": "sustantivo",
+"e": "Quiero agua fría.",
+"d": "Ich möchte kaltes Wasser.",
+"g": "Agua ist weiblich, hat aber el im Singular (el agua), Adjektive bleiben weiblich: agua fría."
+},
+{
+"w": "ciudad",
+"t": "Stadt",
+"p": "sustantivo",
+"e": "Vivo en una ciudad grande.",
+"d": "Ich lebe in einer großen Stadt."
+},
+{
+"w": "amigo",
+"t": "Freund",
+"p": "sustantivo",
+"e": "Mi amigo trabaja aquí.",
+"d": "Mein Freund arbeitet hier.",
+"g": "Weiblich: amiga. Mehrere gemischt: amigos."
+},
+{
+"w": "familia",
+"t": "Familie",
+"p": "sustantivo",
+"e": "Mi familia es grande.",
+"d": "Meine Familie ist groß."
+},
+{
+"w": "bueno",
+"t": "gut",
+"p": "adjetivo",
+"e": "Este restaurante es muy bueno.",
+"d": "Dieses Restaurant ist sehr gut.",
+"g": "Vor männlichem Nomen verkürzt: un buen día."
+},
+{
+"w": "grande",
+"t": "groß",
+"p": "adjetivo",
+"e": "La casa es grande.",
+"d": "Das Haus ist groß.",
+"g": "Vor dem Nomen wird es zu gran: un gran día. Gleiche Form für männlich und weiblich."
+},
+{
+"w": "nuevo",
+"t": "neu",
+"p": "adjetivo",
+"e": "Tengo un teléfono nuevo.",
+"d": "Ich habe ein neues Handy."
+},
+{
+"w": "mucho",
+"t": "viel",
+"p": "adjetivo",
+"e": "Hay mucha gente aquí.",
+"d": "Hier sind viele Leute.",
+"g": "Als Adjektiv passt es sich an: mucha gente, muchos libros. Beim Verb bleibt es gleich: trabajo mucho."
+},
+{
+"w": "todo",
+"t": "alles, ganz",
+"p": "adjetivo",
+"e": "Todo está bien.",
+"d": "Alles ist gut."
+},
+{
+"w": "siempre",
+"t": "immer",
+"p": "adverbio",
+"e": "Siempre desayuno en casa.",
+"d": "Ich frühstücke immer zu Hause."
+},
+{
+"w": "nunca",
+"t": "nie",
+"p": "adverbio",
+"e": "Nunca tomo café por la noche.",
+"d": "Abends trinke ich nie Kaffee.",
+"g": "Verneinung: steht nunca vor dem Verb, kein no. Danach braucht es no: No tomo nunca café."
+},
+{
+"w": "ahora",
+"t": "jetzt",
+"p": "adverbio",
+"e": "Ahora estoy ocupado.",
+"d": "Jetzt bin ich beschäftigt."
+},
+{
+"w": "aquí",
+"t": "hier",
+"p": "adverbio",
+"e": "¿Vives aquí?",
+"d": "Wohnst du hier?"
+},
+{
+"w": "también",
+"t": "auch",
+"p": "adverbio",
+"e": "Yo también quiero ir.",
+"d": "Ich will auch gehen."
+},
+{
+"w": "mañana",
+"t": "morgen",
+"p": "adverbio",
+"e": "Nos vemos mañana.",
+"d": "Wir sehen uns morgen.",
+"g": "Auch Nomen: la mañana = der Morgen."
+},
+{
+"w": "porque",
+"t": "weil",
+"p": "conjunción",
+"e": "No voy porque estoy cansado.",
+"d": "Ich gehe nicht, weil ich müde bin.",
+"g": "Porque = weil. Por qué (zwei Wörter, mit Akzent) = warum."
+},
+{
+"w": "pero",
+"t": "aber",
+"p": "conjunción",
+"e": "Quiero ir, pero no puedo.",
+"d": "Ich will gehen, aber ich kann nicht."
+},
+{
+"w": "cuando",
+"t": "wenn, als",
+"p": "conjunción",
+"e": "Llámame cuando llegues.",
+"d": "Ruf mich an, wenn du ankommst.",
+"g": "Cuando + subjuntivo, wenn die Handlung in der Zukunft liegt: cuando llegues. Bei Gewohnheit Indikativ: cuando llego, tomo café."
+},
+{
+"w": "gracias",
+"t": "danke",
+"p": "otros",
+"e": "Muchas gracias por tu ayuda.",
+"d": "Vielen Dank für deine Hilfe."
+}
+]
