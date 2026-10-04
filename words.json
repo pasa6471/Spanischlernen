@@ -304,5 +304,484 @@
 "p": "otros",
 "e": "Muchas gracias por tu ayuda.",
 "d": "Vielen Dank für deine Hilfe."
+},
+{
+"w": "llegar",
+"t": "ankommen",
+"p": "verbo",
+"e": "Llego a casa a las seis.",
+"d": "Ich komme um sechs nach Hause."
+},
+{
+"w": "pasar",
+"t": "passieren, verbringen",
+"p": "verbo",
+"e": "¿Qué pasó ayer?",
+"d": "Was ist gestern passiert?"
+},
+{
+"w": "deber",
+"t": "müssen, sollen",
+"p": "verbo",
+"e": "Debes descansar más.",
+"d": "Du solltest mehr ausruhen.",
+"g": "Deber + Infinitiv drückt eine Pflicht oder einen Rat aus, milder als tener que."
+},
+{
+"w": "poner",
+"t": "stellen, legen",
+"p": "verbo",
+"e": "Pon la mesa, por favor.",
+"d": "Deck bitte den Tisch."
+},
+{
+"w": "creer",
+"t": "glauben",
+"p": "verbo",
+"e": "Creo que tienes razón.",
+"d": "Ich glaube, du hast recht.",
+"g": "Creo que + Indikativ. In der Verneinung folgt der subjuntivo: No creo que sea verdad."
+},
+{
+"w": "llevar",
+"t": "tragen, bringen",
+"p": "verbo",
+"e": "Llevo una chaqueta azul.",
+"d": "Ich trage eine blaue Jacke."
+},
+{
+"w": "dejar",
+"t": "lassen, verlassen",
+"p": "verbo",
+"e": "Deja las llaves en la mesa.",
+"d": "Lass die Schlüssel auf dem Tisch."
+},
+{
+"w": "seguir",
+"t": "weitermachen",
+"p": "verbo",
+"e": "Sigo trabajando en casa.",
+"d": "Ich arbeite weiter zu Hause.",
+"g": "Seguir + Gerundium = weiter etwas tun: sigo trabajando. Stammvokal e wird zu i: sigo, sigues."
+},
+{
+"w": "encontrar",
+"t": "finden",
+"p": "verbo",
+"e": "No encuentro mis llaves.",
+"d": "Ich finde meine Schlüssel nicht."
+},
+{
+"w": "llamar",
+"t": "rufen, anrufen",
+"p": "verbo",
+"e": "Te llamo más tarde.",
+"d": "Ich rufe dich später an.",
+"g": "Llamarse = heißen: Me llamo Ana."
+},
+{
+"w": "pensar",
+"t": "denken",
+"p": "verbo",
+"e": "Pienso en mi familia.",
+"d": "Ich denke an meine Familie.",
+"g": "Pensar en = an etwas denken. Pensar + Infinitiv = vorhaben: Pienso viajar en verano."
+},
+{
+"w": "salir",
+"t": "ausgehen, abfahren",
+"p": "verbo",
+"e": "Salimos a las ocho.",
+"d": "Wir gehen um acht los."
+},
+{
+"w": "volver",
+"t": "zurückkehren",
+"p": "verbo",
+"e": "Vuelvo en una hora.",
+"d": "Ich bin in einer Stunde zurück.",
+"g": "Volver a + Infinitiv = etwas wieder tun: Vuelvo a intentarlo."
+},
+{
+"w": "tomar",
+"t": "nehmen, trinken",
+"p": "verbo",
+"e": "Tomo el autobús al trabajo.",
+"d": "Ich nehme den Bus zur Arbeit.",
+"g": "In Lateinamerika oft auch für trinken: Tomo agua."
+},
+{
+"w": "conocer",
+"t": "kennen",
+"p": "verbo",
+"e": "¿Conoces este lugar?",
+"d": "Kennst du diesen Ort?",
+"g": "Conocer für Personen und Orte, saber für Wissen. Vor Personen steht a: Conozco a Pedro."
+},
+{
+"w": "sentir",
+"t": "fühlen",
+"p": "verbo",
+"e": "Siento mucho frío.",
+"d": "Mir ist sehr kalt.",
+"g": "Sentirse = sich fühlen: Me siento bien."
+},
+{
+"w": "mirar",
+"t": "anschauen",
+"p": "verbo",
+"e": "Miro por la ventana.",
+"d": "Ich schaue aus dem Fenster."
+},
+{
+"w": "empezar",
+"t": "anfangen",
+"p": "verbo",
+"e": "La clase empieza a las nueve.",
+"d": "Der Unterricht beginnt um neun.",
+"g": "Empezar a + Infinitiv: Empiezo a entender."
+},
+{
+"w": "esperar",
+"t": "warten, hoffen",
+"p": "verbo",
+"e": "Espero que vengas pronto.",
+"d": "Ich hoffe, du kommst bald.",
+"g": "Espero que + subjuntivo: Espero que vengas. Als warten: Espero el bus."
+},
+{
+"w": "buscar",
+"t": "suchen",
+"p": "verbo",
+"e": "Busco un apartamento.",
+"d": "Ich suche eine Wohnung.",
+"g": "Buscar ohne Präposition: Busco mis llaves. Beim Konjugieren wird c zu qu: busqué."
+},
+{
+"w": "entrar",
+"t": "eintreten",
+"p": "verbo",
+"e": "Entra, está abierto.",
+"d": "Komm rein, es ist offen."
+},
+{
+"w": "trabajar",
+"t": "arbeiten",
+"p": "verbo",
+"e": "Trabajo en una oficina.",
+"d": "Ich arbeite in einem Büro."
+},
+{
+"w": "escribir",
+"t": "schreiben",
+"p": "verbo",
+"e": "Escribo un mensaje.",
+"d": "Ich schreibe eine Nachricht."
+},
+{
+"w": "recordar",
+"t": "sich erinnern",
+"p": "verbo",
+"e": "No recuerdo su nombre.",
+"d": "Ich erinnere mich nicht an seinen Namen."
+},
+{
+"w": "pedir",
+"t": "bitten, bestellen",
+"p": "verbo",
+"e": "Pido una sopa, por favor.",
+"d": "Ich bestelle eine Suppe, bitte.",
+"g": "Pedir que + subjuntivo: Te pido que me ayudes. Stammvokal e wird zu i: pido, pides."
+},
+{
+"w": "comprar",
+"t": "kaufen",
+"p": "verbo",
+"e": "Compramos fruta en el mercado.",
+"d": "Wir kaufen Obst auf dem Markt."
+},
+{
+"w": "leer",
+"t": "lesen",
+"p": "verbo",
+"e": "Leo un libro cada mes.",
+"d": "Ich lese jeden Monat ein Buch."
+},
+{
+"w": "escuchar",
+"t": "zuhören",
+"p": "verbo",
+"e": "Escucho música en el bus.",
+"d": "Ich höre Musik im Bus."
+},
+{
+"w": "ayudar",
+"t": "helfen",
+"p": "verbo",
+"e": "¿Me ayudas con esto?",
+"d": "Hilfst du mir dabei?"
+},
+{
+"w": "gustar",
+"t": "gefallen",
+"p": "verbo",
+"e": "Me gusta el café.",
+"d": "Ich mag Kaffee.",
+"g": "Gustar hat die Sache als Subjekt: Me gusta el café, me gustan los libros. Person im Dativ: me, te, le, nos, les."
+},
+{
+"w": "preguntar",
+"t": "fragen",
+"p": "verbo",
+"e": "Te pregunto algo.",
+"d": "Ich frage dich etwas."
+},
+{
+"w": "vida",
+"t": "Leben",
+"p": "sustantivo",
+"e": "La vida aquí es tranquila.",
+"d": "Das Leben hier ist ruhig."
+},
+{
+"w": "mundo",
+"t": "Welt",
+"p": "sustantivo",
+"e": "Quiero viajar por el mundo.",
+"d": "Ich will durch die Welt reisen."
+},
+{
+"w": "hombre",
+"t": "Mann",
+"p": "sustantivo",
+"e": "Ese hombre es mi tío.",
+"d": "Dieser Mann ist mein Onkel."
+},
+{
+"w": "mujer",
+"t": "Frau",
+"p": "sustantivo",
+"e": "Mi mujer trabaja mucho.",
+"d": "Meine Frau arbeitet viel."
+},
+{
+"w": "niño",
+"t": "Kind, Junge",
+"p": "sustantivo",
+"e": "El niño juega en el parque.",
+"d": "Das Kind spielt im Park.",
+"g": "Weiblich: niña. Mehrere: niños."
+},
+{
+"w": "mano",
+"t": "Hand",
+"p": "sustantivo",
+"e": "Tengo frío en las manos.",
+"d": "Ich habe kalte Hände.",
+"g": "La mano ist weiblich, obwohl es auf -o endet."
+},
+{
+"w": "parte",
+"t": "Teil",
+"p": "sustantivo",
+"e": "Es una parte importante.",
+"d": "Das ist ein wichtiger Teil."
+},
+{
+"w": "lugar",
+"t": "Ort",
+"p": "sustantivo",
+"e": "Es un lugar muy bonito.",
+"d": "Das ist ein sehr schöner Ort."
+},
+{
+"w": "vez",
+"t": "Mal",
+"p": "sustantivo",
+"e": "Es la primera vez que vengo.",
+"d": "Ich komme zum ersten Mal.",
+"g": "Plural: veces. A veces = manchmal; otra vez = nochmal."
+},
+{
+"w": "cosa",
+"t": "Sache",
+"p": "sustantivo",
+"e": "Tengo muchas cosas que hacer.",
+"d": "Ich habe viele Dinge zu tun."
+},
+{
+"w": "país",
+"t": "Land",
+"p": "sustantivo",
+"e": "México es un país grande.",
+"d": "Mexiko ist ein großes Land."
+},
+{
+"w": "noche",
+"t": "Nacht, Abend",
+"p": "sustantivo",
+"e": "Salimos por la noche.",
+"d": "Wir gehen abends aus."
+},
+{
+"w": "nombre",
+"t": "Name",
+"p": "sustantivo",
+"e": "¿Cuál es tu nombre?",
+"d": "Wie heißt du?"
+},
+{
+"w": "momento",
+"t": "Moment",
+"p": "sustantivo",
+"e": "Un momento, por favor.",
+"d": "Einen Moment, bitte.",
+"g": "Momento ist männlich, obwohl viele Wörter auf -mento so sind: el momento, el documento."
+},
+{
+"w": "palabra",
+"t": "Wort",
+"p": "sustantivo",
+"e": "No conozco esta palabra.",
+"d": "Ich kenne dieses Wort nicht."
+},
+{
+"w": "calle",
+"t": "Straße",
+"p": "sustantivo",
+"e": "Vivo en esta calle.",
+"d": "Ich wohne in dieser Straße."
+},
+{
+"w": "hora",
+"t": "Stunde, Uhrzeit",
+"p": "sustantivo",
+"e": "¿Qué hora es?",
+"d": "Wie spät ist es?"
+},
+{
+"w": "semana",
+"t": "Woche",
+"p": "sustantivo",
+"e": "Trabajo cinco días por semana.",
+"d": "Ich arbeite fünf Tage pro Woche."
+},
+{
+"w": "dinero",
+"t": "Geld",
+"p": "sustantivo",
+"e": "No tengo mucho dinero.",
+"d": "Ich habe nicht viel Geld."
+},
+{
+"w": "comida",
+"t": "Essen",
+"p": "sustantivo",
+"e": "La comida está lista.",
+"d": "Das Essen ist fertig."
+},
+{
+"w": "pequeño",
+"t": "klein",
+"p": "adjetivo",
+"e": "Vivimos en un apartamento pequeño.",
+"d": "Wir wohnen in einer kleinen Wohnung."
+},
+{
+"w": "otro",
+"t": "anderer",
+"p": "adjetivo",
+"e": "Quiero otro café.",
+"d": "Ich möchte noch einen Kaffee.",
+"g": "Kein Artikel vor otro: otro café, nicht un otro café."
+},
+{
+"w": "mismo",
+"t": "gleich, selbst",
+"p": "adjetivo",
+"e": "Tenemos el mismo problema.",
+"d": "Wir haben dasselbe Problem."
+},
+{
+"w": "difícil",
+"t": "schwer",
+"p": "adjetivo",
+"e": "El examen fue difícil.",
+"d": "Die Prüfung war schwer."
+},
+{
+"w": "fácil",
+"t": "leicht",
+"p": "adjetivo",
+"e": "Este ejercicio es fácil.",
+"d": "Diese Übung ist leicht."
+},
+{
+"w": "importante",
+"t": "wichtig",
+"p": "adjetivo",
+"e": "Es importante dormir bien.",
+"d": "Es ist wichtig, gut zu schlafen.",
+"g": "Es importante que + subjuntivo, wenn eine Person gemeint ist: Es importante que duermas."
+},
+{
+"w": "muy",
+"t": "sehr",
+"p": "adverbio",
+"e": "Estoy muy contento.",
+"d": "Ich bin sehr zufrieden.",
+"g": "Muy steht vor Adjektiven und Adverbien, mucho vor Nomen: muy grande, mucho trabajo."
+},
+{
+"w": "bien",
+"t": "gut",
+"p": "adverbio",
+"e": "Hablas muy bien.",
+"d": "Du sprichst sehr gut.",
+"g": "Bien ist ein Adverb beim Verb (hablas bien), bueno ein Adjektiv beim Nomen (un libro bueno)."
+},
+{
+"w": "ya",
+"t": "schon, bereits",
+"p": "adverbio",
+"e": "Ya terminé el trabajo.",
+"d": "Ich habe die Arbeit schon beendet."
+},
+{
+"w": "hoy",
+"t": "heute",
+"p": "adverbio",
+"e": "Hoy hace mucho calor.",
+"d": "Heute ist es sehr heiß."
+},
+{
+"w": "antes",
+"t": "vorher",
+"p": "adverbio",
+"e": "Antes vivía en otra ciudad.",
+"d": "Früher habe ich in einer anderen Stadt gewohnt.",
+"g": "Antes de + Infinitiv: antes de comer. Mit eigenem Subjekt: antes de que + subjuntivo."
+},
+{
+"w": "después",
+"t": "danach",
+"p": "adverbio",
+"e": "Primero comemos y después salimos.",
+"d": "Zuerst essen wir und danach gehen wir.",
+"g": "Después de + Infinitiv: después de comer. Mit Zukunft: después de que + subjuntivo."
+},
+{
+"w": "entonces",
+"t": "dann, also",
+"p": "adverbio",
+"e": "Entonces, ¿qué hacemos?",
+"d": "Also, was machen wir?"
+},
+{
+"w": "por favor",
+"t": "bitte",
+"p": "otros",
+"e": "Un café, por favor.",
+"d": "Einen Kaffee, bitte."
 }
 ]
