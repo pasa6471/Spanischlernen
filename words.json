@@ -5,7 +5,9 @@
 "p": "verbo",
 "e": "Soy de México.",
 "d": "Ich komme aus Mexiko.",
-"g": "Ser für Identität, Herkunft, Beruf, Eigenschaften: soy, eres, es, somos, son. Für Zustände und Orte nimmt man estar."
+"g": "Ser für Identität, Herkunft, Beruf, Eigenschaften: soy, eres, es, somos, son. Für Zustände und Orte nimmt man estar.",
+"e2": "Aunque sea difícil, quiero ser honesto contigo.",
+"d2": "Auch wenn es schwer ist, will ich ehrlich zu dir sein."
 },
 {
 "w": "estar",
@@ -13,7 +15,9 @@
 "p": "verbo",
 "e": "Estoy en casa ahora.",
 "d": "Ich bin jetzt zu Hause.",
-"g": "Estar für Orte und vorübergehende Zustände. Está cansado = er ist gerade müde; es aburrido = er ist von Natur aus langweilig."
+"g": "Estar für Orte und vorübergehende Zustände. Está cansado = er ist gerade müde; es aburrido = er ist von Natur aus langweilig.",
+"e2": "Si estuviera en tu lugar, no estaría tan tranquilo.",
+"d2": "Wenn ich an deiner Stelle wäre, wäre ich nicht so ruhig."
 },
 {
 "w": "tener",
@@ -21,14 +25,18 @@
 "p": "verbo",
 "e": "Tengo dos hermanos.",
 "d": "Ich habe zwei Geschwister.",
-"g": "Tener que + Infinitiv = müssen: Tengo que trabajar. Auch fürs Alter: Tengo treinta años."
+"g": "Tener que + Infinitiv = müssen: Tengo que trabajar. Auch fürs Alter: Tengo treinta años.",
+"e2": "Tuve que cancelar el viaje porque no tenía suficiente dinero.",
+"d2": "Ich musste die Reise absagen, weil ich nicht genug Geld hatte."
 },
 {
 "w": "hacer",
 "t": "machen, tun",
 "p": "verbo",
 "e": "¿Qué haces hoy?",
-"d": "Was machst du heute?"
+"d": "Was machst du heute?",
+"e2": "Hace años que no hago ejercicio, pero quiero volver a empezar.",
+"d2": "Seit Jahren treibe ich keinen Sport, will aber wieder anfangen."
 },
 {
 "w": "ir",
@@ -36,7 +44,9 @@
 "p": "verbo",
 "e": "Voy a comprar pan.",
 "d": "Ich werde Brot kaufen.",
-"g": "Ir a + Infinitiv bildet die nahe Zukunft: voy a, vas a, va a, vamos a, van a."
+"g": "Ir a + Infinitiv bildet die nahe Zukunft: voy a, vas a, va a, vamos a, van a.",
+"e2": "Si tuviera más tiempo, iría contigo al norte del país.",
+"d2": "Hätte ich mehr Zeit, würde ich mit dir in den Norden des Landes fahren."
 },
 {
 "w": "poder",
@@ -44,14 +54,18 @@
 "p": "verbo",
 "e": "¿Puedes ayudarme?",
 "d": "Kannst du mir helfen?",
-"g": "Stammvokal o wird zu ue (puedo, puedes), bei nosotros nicht: podemos. Danach steht der Infinitiv."
+"g": "Stammvokal o wird zu ue (puedo, puedes), bei nosotros nicht: podemos. Danach steht der Infinitiv.",
+"e2": "No pude llamarte porque se me acabó la batería.",
+"d2": "Ich konnte dich nicht anrufen, weil mein Akku leer war."
 },
 {
 "w": "decir",
 "t": "sagen",
 "p": "verbo",
 "e": "Dice que viene mañana.",
-"d": "Er sagt, dass er morgen kommt."
+"d": "Er sagt, dass er morgen kommt.",
+"e2": "Me dijeron que la reunión se había cancelado.",
+"d2": "Man sagte mir, das Treffen sei abgesagt worden."
 },
 {
 "w": "querer",
@@ -59,7 +73,9 @@
 "p": "verbo",
 "e": "Quiero un café, por favor.",
 "d": "Ich möchte einen Kaffee, bitte.",
-"g": "Quiero que + subjuntivo, wenn eine andere Person handeln soll: Quiero que vengas. Gleiche Person: Quiero venir (Infinitiv)."
+"g": "Quiero que + subjuntivo, wenn eine andere Person handeln soll: Quiero que vengas. Gleiche Person: Quiero venir (Infinitiv).",
+"e2": "Quería que me explicaras cómo funciona esto.",
+"d2": "Ich wollte, dass du mir erklärst, wie das funktioniert."
 },
 {
 "w": "saber",
@@ -67,63 +83,81 @@
 "p": "verbo",
 "e": "No sé dónde está.",
 "d": "Ich weiß nicht, wo es ist.",
-"g": "Saber = Wissen oder gelernte Fähigkeit (Sé nadar). Conocer = Personen und Orte kennen."
+"g": "Saber = Wissen oder gelernte Fähigkeit (Sé nadar). Conocer = Personen und Orte kennen.",
+"e2": "Nadie sabe cuándo terminará la obra en la calle.",
+"d2": "Niemand weiß, wann die Baustelle in der Straße fertig wird."
 },
 {
 "w": "ver",
 "t": "sehen",
 "p": "verbo",
 "e": "Veo la tele por la noche.",
-"d": "Abends sehe ich fern."
+"d": "Abends sehe ich fern.",
+"e2": "Ayer vi a un viejo amigo que no veía desde hacía diez años.",
+"d2": "Gestern sah ich einen alten Freund, den ich seit zehn Jahren nicht gesehen hatte."
 },
 {
 "w": "dar",
 "t": "geben",
 "p": "verbo",
 "e": "Te doy mi número.",
-"d": "Ich gebe dir meine Nummer."
+"d": "Ich gebe dir meine Nummer.",
+"e2": "Me dio mucha pena que no me avisaras antes.",
+"d2": "Es tat mir sehr leid, dass du mir nicht früher Bescheid gegeben hast."
 },
 {
 "w": "venir",
 "t": "kommen",
 "p": "verbo",
 "e": "¿Vienes a la fiesta?",
-"d": "Kommst du zur Party?"
+"d": "Kommst du zur Party?",
+"e2": "Cuando vengas a visitarme, te llevaré a conocer el centro.",
+"d2": "Wenn du mich besuchen kommst, zeige ich dir die Innenstadt."
 },
 {
 "w": "hablar",
 "t": "sprechen",
 "p": "verbo",
 "e": "Hablo un poco de español.",
-"d": "Ich spreche ein bisschen Spanisch."
+"d": "Ich spreche ein bisschen Spanisch.",
+"e2": "Me gustaría hablar con fluidez antes de viajar a Colombia.",
+"d2": "Ich würde gern fließend sprechen, bevor ich nach Kolumbien reise."
 },
 {
 "w": "comer",
 "t": "essen",
 "p": "verbo",
 "e": "Comemos a las dos.",
-"d": "Wir essen um zwei."
+"d": "Wir essen um zwei.",
+"e2": "Si hubiera comido algo antes, no me sentiría tan mal ahora.",
+"d2": "Hätte ich vorher etwas gegessen, ginge es mir jetzt nicht so schlecht."
 },
 {
 "w": "vivir",
 "t": "leben, wohnen",
 "p": "verbo",
 "e": "Vivo en Berlín.",
-"d": "Ich wohne in Berlin."
+"d": "Ich wohne in Berlin.",
+"e2": "Llevo dos años viviendo en el extranjero y todavía me adapto.",
+"d2": "Ich lebe seit zwei Jahren im Ausland und gewöhne mich noch ein."
 },
 {
 "w": "necesitar",
 "t": "brauchen",
 "p": "verbo",
 "e": "Necesito más tiempo.",
-"d": "Ich brauche mehr Zeit."
+"d": "Ich brauche mehr Zeit.",
+"e2": "Necesitamos que alguien se haga cargo del proyecto.",
+"d2": "Wir brauchen jemanden, der das Projekt übernimmt."
 },
 {
 "w": "casa",
 "t": "Haus, Zuhause",
 "p": "sustantivo",
 "e": "Mi casa está cerca.",
-"d": "Mein Haus ist in der Nähe."
+"d": "Mein Haus ist in der Nähe.",
+"e2": "Dejé mi casa en manos de unos vecinos mientras viajaba.",
+"d2": "Ich ließ mein Haus in der Obhut von Nachbarn, während ich verreist war."
 },
 {
 "w": "tiempo",
@@ -131,7 +165,9 @@
 "p": "sustantivo",
 "e": "No tengo tiempo hoy.",
 "d": "Ich habe heute keine Zeit.",
-"g": "El tiempo = Zeit oder Wetter. Hace buen tiempo = das Wetter ist schön."
+"g": "El tiempo = Zeit oder Wetter. Hace buen tiempo = das Wetter ist schön.",
+"e2": "Con el tiempo uno aprende a no preocuparse por todo.",
+"d2": "Mit der Zeit lernt man, sich nicht über alles zu sorgen."
 },
 {
 "w": "día",
@@ -139,14 +175,18 @@
 "p": "sustantivo",
 "e": "Buen día, ¿cómo estás?",
 "d": "Guten Tag, wie geht's?",
-"g": "El día ist männlich, obwohl es auf -a endet. Gruß: buenos días, buenas tardes, buenas noches."
+"g": "El día ist männlich, obwohl es auf -a endet. Gruß: buenos días, buenas tardes, buenas noches.",
+"e2": "Por mucho que trabaje, siempre me faltan horas al día.",
+"d2": "Egal wie viel ich arbeite, mir fehlen immer Stunden am Tag."
 },
 {
 "w": "año",
 "t": "Jahr",
 "p": "sustantivo",
 "e": "Vivo aquí hace un año.",
-"d": "Ich wohne seit einem Jahr hier."
+"d": "Ich wohne seit einem Jahr hier.",
+"e2": "El año pasado cambié de empleo y me mudé de ciudad.",
+"d2": "Letztes Jahr wechselte ich den Job und zog in eine andere Stadt."
 },
 {
 "w": "persona",
@@ -154,14 +194,18 @@
 "p": "sustantivo",
 "e": "Es una persona muy amable.",
 "d": "Er ist ein sehr freundlicher Mensch.",
-"g": "Persona ist immer weiblich, auch für Männer."
+"g": "Persona ist immer weiblich, auch für Männer.",
+"e2": "Es una persona de la que uno puede fiarse por completo.",
+"d2": "Er ist ein Mensch, auf den man sich völlig verlassen kann."
 },
 {
 "w": "trabajo",
 "t": "Arbeit",
 "p": "sustantivo",
 "e": "Mi trabajo empieza a las ocho.",
-"d": "Meine Arbeit beginnt um acht."
+"d": "Meine Arbeit beginnt um acht.",
+"e2": "Conseguí el trabajo gracias a una recomendación de un colega.",
+"d2": "Ich bekam die Stelle dank der Empfehlung eines Kollegen."
 },
 {
 "w": "agua",
@@ -169,14 +213,18 @@
 "p": "sustantivo",
 "e": "Quiero agua fría.",
 "d": "Ich möchte kaltes Wasser.",
-"g": "Agua ist weiblich, hat aber el im Singular (el agua), Adjektive bleiben weiblich: agua fría."
+"g": "Agua ist weiblich, hat aber el im Singular (el agua), Adjektive bleiben weiblich: agua fría.",
+"e2": "Hay que ahorrar agua, sobre todo en épocas de sequía.",
+"d2": "Man muss Wasser sparen, vor allem in Dürrezeiten."
 },
 {
 "w": "ciudad",
 "t": "Stadt",
 "p": "sustantivo",
 "e": "Vivo en una ciudad grande.",
-"d": "Ich lebe in einer großen Stadt."
+"d": "Ich lebe in einer großen Stadt.",
+"e2": "Esta ciudad ha cambiado tanto que ya no la reconozco.",
+"d2": "Diese Stadt hat sich so verändert, dass ich sie nicht mehr erkenne."
 },
 {
 "w": "amigo",
@@ -184,14 +232,18 @@
 "p": "sustantivo",
 "e": "Mi amigo trabaja aquí.",
 "d": "Mein Freund arbeitet hier.",
-"g": "Weiblich: amiga. Mehrere gemischt: amigos."
+"g": "Weiblich: amiga. Mehrere gemischt: amigos.",
+"e2": "Un buen amigo es quien te dice la verdad aunque duela.",
+"d2": "Ein guter Freund ist, wer dir die Wahrheit sagt, auch wenn sie wehtut."
 },
 {
 "w": "familia",
 "t": "Familie",
 "p": "sustantivo",
 "e": "Mi familia es grande.",
-"d": "Meine Familie ist groß."
+"d": "Meine Familie ist groß.",
+"e2": "Mi familia me apoyó cuando decidí estudiar en el extranjero.",
+"d2": "Meine Familie unterstützte mich, als ich beschloss, im Ausland zu studieren."
 },
 {
 "w": "bueno",
@@ -199,7 +251,9 @@
 "p": "adjetivo",
 "e": "Este restaurante es muy bueno.",
 "d": "Dieses Restaurant ist sehr gut.",
-"g": "Vor männlichem Nomen verkürzt: un buen día."
+"g": "Vor männlichem Nomen verkürzt: un buen día.",
+"e2": "Está bien, pero no creo que sea la mejor opción.",
+"d2": "Schon gut, aber ich glaube nicht, dass es die beste Option ist."
 },
 {
 "w": "grande",
@@ -207,14 +261,18 @@
 "p": "adjetivo",
 "e": "La casa es grande.",
 "d": "Das Haus ist groß.",
-"g": "Vor dem Nomen wird es zu gran: un gran día. Gleiche Form für männlich und weiblich."
+"g": "Vor dem Nomen wird es zu gran: un gran día. Gleiche Form für männlich und weiblich.",
+"e2": "Fue un gran error confiar en una promesa tan vaga.",
+"d2": "Es war ein großer Fehler, einem so vagen Versprechen zu vertrauen."
 },
 {
 "w": "nuevo",
 "t": "neu",
 "p": "adjetivo",
 "e": "Tengo un teléfono nuevo.",
-"d": "Ich habe ein neues Handy."
+"d": "Ich habe ein neues Handy.",
+"e2": "Estamos probando un método nuevo para ahorrar energía.",
+"d2": "Wir testen eine neue Methode, um Energie zu sparen."
 },
 {
 "w": "mucho",
@@ -222,21 +280,27 @@
 "p": "adjetivo",
 "e": "Hay mucha gente aquí.",
 "d": "Hier sind viele Leute.",
-"g": "Als Adjektiv passt es sich an: mucha gente, muchos libros. Beim Verb bleibt es gleich: trabajo mucho."
+"g": "Als Adjektiv passt es sich an: mucha gente, muchos libros. Beim Verb bleibt es gleich: trabajo mucho.",
+"e2": "A pesar de que había mucha gente, encontramos una mesa.",
+"d2": "Obwohl viele Leute da waren, fanden wir einen Tisch."
 },
 {
 "w": "todo",
 "t": "alles, ganz",
 "p": "adjetivo",
 "e": "Todo está bien.",
-"d": "Alles ist gut."
+"d": "Alles ist gut.",
+"e2": "Todo lo que dijo resultó ser cierto.",
+"d2": "Alles, was er sagte, erwies sich als wahr."
 },
 {
 "w": "siempre",
 "t": "immer",
 "p": "adverbio",
 "e": "Siempre desayuno en casa.",
-"d": "Ich frühstücke immer zu Hause."
+"d": "Ich frühstücke immer zu Hause.",
+"e2": "Siempre que puedo, prefiero ir caminando al trabajo.",
+"d2": "Wann immer ich kann, gehe ich lieber zu Fuß zur Arbeit."
 },
 {
 "w": "nunca",
@@ -244,28 +308,36 @@
 "p": "adverbio",
 "e": "Nunca tomo café por la noche.",
 "d": "Abends trinke ich nie Kaffee.",
-"g": "Verneinung: steht nunca vor dem Verb, kein no. Danach braucht es no: No tomo nunca café."
+"g": "Verneinung: steht nunca vor dem Verb, kein no. Danach braucht es no: No tomo nunca café.",
+"e2": "Nunca imaginé que fuera a ser tan complicado.",
+"d2": "Ich hätte nie gedacht, dass es so kompliziert werden würde."
 },
 {
 "w": "ahora",
 "t": "jetzt",
 "p": "adverbio",
 "e": "Ahora estoy ocupado.",
-"d": "Jetzt bin ich beschäftigt."
+"d": "Jetzt bin ich beschäftigt.",
+"e2": "Ahora que lo pienso, tienes toda la razón.",
+"d2": "Jetzt, wo ich darüber nachdenke, hast du völlig recht."
 },
 {
 "w": "aquí",
 "t": "hier",
 "p": "adverbio",
 "e": "¿Vives aquí?",
-"d": "Wohnst du hier?"
+"d": "Wohnst du hier?",
+"e2": "Aquí es donde empezó todo hace veinte años.",
+"d2": "Hier hat vor zwanzig Jahren alles begonnen."
 },
 {
 "w": "también",
 "t": "auch",
 "p": "adverbio",
 "e": "Yo también quiero ir.",
-"d": "Ich will auch gehen."
+"d": "Ich will auch gehen.",
+"e2": "No solo llegó tarde, sino que también olvidó los documentos.",
+"d2": "Er kam nicht nur zu spät, sondern vergaß auch die Unterlagen."
 },
 {
 "w": "mañana",
@@ -273,7 +345,9 @@
 "p": "adverbio",
 "e": "Nos vemos mañana.",
 "d": "Wir sehen uns morgen.",
-"g": "Auch Nomen: la mañana = der Morgen."
+"g": "Auch Nomen: la mañana = der Morgen.",
+"e2": "Si mañana llueve, aplazaremos la excursión.",
+"d2": "Wenn es morgen regnet, verschieben wir den Ausflug."
 },
 {
 "w": "porque",
@@ -281,14 +355,18 @@
 "p": "conjunción",
 "e": "No voy porque estoy cansado.",
 "d": "Ich gehe nicht, weil ich müde bin.",
-"g": "Porque = weil. Por qué (zwei Wörter, mit Akzent) = warum."
+"g": "Porque = weil. Por qué (zwei Wörter, mit Akzent) = warum.",
+"e2": "No lo compré porque me pareció demasiado caro.",
+"d2": "Ich habe es nicht gekauft, weil es mir zu teuer vorkam."
 },
 {
 "w": "pero",
 "t": "aber",
 "p": "conjunción",
 "e": "Quiero ir, pero no puedo.",
-"d": "Ich will gehen, aber ich kann nicht."
+"d": "Ich will gehen, aber ich kann nicht.",
+"e2": "Entiendo tu postura, pero no estoy de acuerdo.",
+"d2": "Ich verstehe deinen Standpunkt, bin aber nicht einverstanden."
 },
 {
 "w": "cuando",
@@ -296,28 +374,36 @@
 "p": "conjunción",
 "e": "Llámame cuando llegues.",
 "d": "Ruf mich an, wenn du ankommst.",
-"g": "Cuando + subjuntivo, wenn die Handlung in der Zukunft liegt: cuando llegues. Bei Gewohnheit Indikativ: cuando llego, tomo café."
+"g": "Cuando + subjuntivo, wenn die Handlung in der Zukunft liegt: cuando llegues. Bei Gewohnheit Indikativ: cuando llego, tomo café.",
+"e2": "Cuando termine el curso, buscaré trabajo en el extranjero.",
+"d2": "Wenn der Kurs vorbei ist, suche ich Arbeit im Ausland."
 },
 {
 "w": "gracias",
 "t": "danke",
 "p": "otros",
 "e": "Muchas gracias por tu ayuda.",
-"d": "Vielen Dank für deine Hilfe."
+"d": "Vielen Dank für deine Hilfe.",
+"e2": "Gracias a tu consejo, evité un grave problema.",
+"d2": "Dank deines Rates habe ich ein ernstes Problem vermieden."
 },
 {
 "w": "llegar",
 "t": "ankommen",
 "p": "verbo",
 "e": "Llego a casa a las seis.",
-"d": "Ich komme um sechs nach Hause."
+"d": "Ich komme um sechs nach Hause.",
+"e2": "Cuando llegamos, la película ya había empezado.",
+"d2": "Als wir ankamen, hatte der Film schon begonnen."
 },
 {
 "w": "pasar",
 "t": "passieren, verbringen",
 "p": "verbo",
 "e": "¿Qué pasó ayer?",
-"d": "Was ist gestern passiert?"
+"d": "Was ist gestern passiert?",
+"e2": "Aunque pase lo que pase, cuenta conmigo.",
+"d2": "Was auch geschieht, du kannst auf mich zählen."
 },
 {
 "w": "deber",
@@ -325,14 +411,18 @@
 "p": "verbo",
 "e": "Debes descansar más.",
 "d": "Du solltest mehr ausruhen.",
-"g": "Deber + Infinitiv drückt eine Pflicht oder einen Rat aus, milder als tener que."
+"g": "Deber + Infinitiv drückt eine Pflicht oder einen Rat aus, milder als tener que.",
+"e2": "Deberías haberme avisado antes de tomar esa decisión.",
+"d2": "Du hättest mir Bescheid sagen sollen, bevor du diese Entscheidung getroffen hast."
 },
 {
 "w": "poner",
 "t": "stellen, legen",
 "p": "verbo",
 "e": "Pon la mesa, por favor.",
-"d": "Deck bitte den Tisch."
+"d": "Deck bitte den Tisch.",
+"e2": "Se puso nervioso en cuanto le hicieron la pregunta.",
+"d2": "Er wurde nervös, sobald man ihm die Frage stellte."
 },
 {
 "w": "creer",
@@ -340,21 +430,27 @@
 "p": "verbo",
 "e": "Creo que tienes razón.",
 "d": "Ich glaube, du hast recht.",
-"g": "Creo que + Indikativ. In der Verneinung folgt der subjuntivo: No creo que sea verdad."
+"g": "Creo que + Indikativ. In der Verneinung folgt der subjuntivo: No creo que sea verdad.",
+"e2": "No creo que haya tomado la decisión correcta.",
+"d2": "Ich glaube nicht, dass er die richtige Entscheidung getroffen hat."
 },
 {
 "w": "llevar",
 "t": "tragen, bringen",
 "p": "verbo",
 "e": "Llevo una chaqueta azul.",
-"d": "Ich trage eine blaue Jacke."
+"d": "Ich trage eine blaue Jacke.",
+"e2": "Llevo tres semanas intentando resolver este problema.",
+"d2": "Ich versuche seit drei Wochen, dieses Problem zu lösen."
 },
 {
 "w": "dejar",
 "t": "lassen, verlassen",
 "p": "verbo",
 "e": "Deja las llaves en la mesa.",
-"d": "Lass die Schlüssel auf dem Tisch."
+"d": "Lass die Schlüssel auf dem Tisch.",
+"e2": "Dejó de fumar hace un año y se siente mucho mejor.",
+"d2": "Er hat vor einem Jahr mit dem Rauchen aufgehört und fühlt sich viel besser."
 },
 {
 "w": "seguir",
@@ -362,14 +458,18 @@
 "p": "verbo",
 "e": "Sigo trabajando en casa.",
 "d": "Ich arbeite weiter zu Hause.",
-"g": "Seguir + Gerundium = weiter etwas tun: sigo trabajando. Stammvokal e wird zu i: sigo, sigues."
+"g": "Seguir + Gerundium = weiter etwas tun: sigo trabajando. Stammvokal e wird zu i: sigo, sigues.",
+"e2": "Sigue lloviendo, así que seguiremos esperando adentro.",
+"d2": "Es regnet weiter, also warten wir drinnen weiter."
 },
 {
 "w": "encontrar",
 "t": "finden",
 "p": "verbo",
 "e": "No encuentro mis llaves.",
-"d": "Ich finde meine Schlüssel nicht."
+"d": "Ich finde meine Schlüssel nicht.",
+"e2": "Me costó encontrar un piso que se ajustara a mi presupuesto.",
+"d2": "Es fiel mir schwer, eine Wohnung zu finden, die zu meinem Budget passte."
 },
 {
 "w": "llamar",
@@ -377,7 +477,9 @@
 "p": "verbo",
 "e": "Te llamo más tarde.",
 "d": "Ich rufe dich später an.",
-"g": "Llamarse = heißen: Me llamo Ana."
+"g": "Llamarse = heißen: Me llamo Ana.",
+"e2": "Me llamó la atención que nadie hiciera preguntas.",
+"d2": "Mir fiel auf, dass niemand Fragen stellte."
 },
 {
 "w": "pensar",
@@ -385,14 +487,18 @@
 "p": "verbo",
 "e": "Pienso en mi familia.",
 "d": "Ich denke an meine Familie.",
-"g": "Pensar en = an etwas denken. Pensar + Infinitiv = vorhaben: Pienso viajar en verano."
+"g": "Pensar en = an etwas denken. Pensar + Infinitiv = vorhaben: Pienso viajar en verano.",
+"e2": "Pensándolo bien, creo que deberíamos esperar un poco.",
+"d2": "Wenn ich es mir recht überlege, sollten wir ein bisschen warten."
 },
 {
 "w": "salir",
 "t": "ausgehen, abfahren",
 "p": "verbo",
 "e": "Salimos a las ocho.",
-"d": "Wir gehen um acht los."
+"d": "Wir gehen um acht los.",
+"e2": "Salió mejor de lo que esperábamos.",
+"d2": "Es lief besser, als wir erwartet hatten."
 },
 {
 "w": "volver",
@@ -400,7 +506,9 @@
 "p": "verbo",
 "e": "Vuelvo en una hora.",
 "d": "Ich bin in einer Stunde zurück.",
-"g": "Volver a + Infinitiv = etwas wieder tun: Vuelvo a intentarlo."
+"g": "Volver a + Infinitiv = etwas wieder tun: Vuelvo a intentarlo.",
+"e2": "Cuando vuelva de viaje, te contaré todo con detalle.",
+"d2": "Wenn ich von der Reise zurück bin, erzähle ich dir alles genau."
 },
 {
 "w": "tomar",
@@ -408,7 +516,9 @@
 "p": "verbo",
 "e": "Tomo el autobús al trabajo.",
 "d": "Ich nehme den Bus zur Arbeit.",
-"g": "In Lateinamerika oft auch für trinken: Tomo agua."
+"g": "In Lateinamerika oft auch für trinken: Tomo agua.",
+"e2": "Tomamos la decisión después de analizar todas las opciones.",
+"d2": "Wir trafen die Entscheidung, nachdem wir alle Optionen geprüft hatten."
 },
 {
 "w": "conocer",
@@ -416,7 +526,9 @@
 "p": "verbo",
 "e": "¿Conoces este lugar?",
 "d": "Kennst du diesen Ort?",
-"g": "Conocer für Personen und Orte, saber für Wissen. Vor Personen steht a: Conozco a Pedro."
+"g": "Conocer für Personen und Orte, saber für Wissen. Vor Personen steht a: Conozco a Pedro.",
+"e2": "Conocí a mi socio en un congreso hace unos años.",
+"d2": "Meinen Geschäftspartner lernte ich vor Jahren auf einem Kongress kennen."
 },
 {
 "w": "sentir",
@@ -424,14 +536,18 @@
 "p": "verbo",
 "e": "Siento mucho frío.",
 "d": "Mir ist sehr kalt.",
-"g": "Sentirse = sich fühlen: Me siento bien."
+"g": "Sentirse = sich fühlen: Me siento bien.",
+"e2": "Siento que no me están escuchando.",
+"d2": "Ich habe das Gefühl, dass man mir nicht zuhört."
 },
 {
 "w": "mirar",
 "t": "anschauen",
 "p": "verbo",
 "e": "Miro por la ventana.",
-"d": "Ich schaue aus dem Fenster."
+"d": "Ich schaue aus dem Fenster.",
+"e2": "Mira, no quiero discutir, solo quiero entender.",
+"d2": "Schau, ich will nicht streiten, ich will nur verstehen."
 },
 {
 "w": "empezar",
@@ -439,7 +555,9 @@
 "p": "verbo",
 "e": "La clase empieza a las nueve.",
 "d": "Der Unterricht beginnt um neun.",
-"g": "Empezar a + Infinitiv: Empiezo a entender."
+"g": "Empezar a + Infinitiv: Empiezo a entender.",
+"e2": "En cuanto empiece a hacer frío, pondremos la calefacción.",
+"d2": "Sobald es kalt wird, schalten wir die Heizung ein."
 },
 {
 "w": "esperar",
@@ -447,7 +565,9 @@
 "p": "verbo",
 "e": "Espero que vengas pronto.",
 "d": "Ich hoffe, du kommst bald.",
-"g": "Espero que + subjuntivo: Espero que vengas. Als warten: Espero el bus."
+"g": "Espero que + subjuntivo: Espero que vengas. Als warten: Espero el bus.",
+"e2": "Esperaba que me dieran una respuesta antes del viernes.",
+"d2": "Ich hatte gehofft, man würde mir vor Freitag antworten."
 },
 {
 "w": "buscar",
@@ -455,35 +575,45 @@
 "p": "verbo",
 "e": "Busco un apartamento.",
 "d": "Ich suche eine Wohnung.",
-"g": "Buscar ohne Präposition: Busco mis llaves. Beim Konjugieren wird c zu qu: busqué."
+"g": "Buscar ohne Präposition: Busco mis llaves. Beim Konjugieren wird c zu qu: busqué.",
+"e2": "Busco a alguien que sepa arreglar ordenadores.",
+"d2": "Ich suche jemanden, der Computer reparieren kann."
 },
 {
 "w": "entrar",
 "t": "eintreten",
 "p": "verbo",
 "e": "Entra, está abierto.",
-"d": "Komm rein, es ist offen."
+"d": "Komm rein, es ist offen.",
+"e2": "Entramos sin hacer ruido para no despertar a nadie.",
+"d2": "Wir gingen leise hinein, um niemanden zu wecken."
 },
 {
 "w": "trabajar",
 "t": "arbeiten",
 "p": "verbo",
 "e": "Trabajo en una oficina.",
-"d": "Ich arbeite in einem Büro."
+"d": "Ich arbeite in einem Büro.",
+"e2": "Trabajo por cuenta propia desde que dejé la empresa.",
+"d2": "Ich arbeite selbstständig, seit ich die Firma verlassen habe."
 },
 {
 "w": "escribir",
 "t": "schreiben",
 "p": "verbo",
 "e": "Escribo un mensaje.",
-"d": "Ich schreibe eine Nachricht."
+"d": "Ich schreibe eine Nachricht.",
+"e2": "Le escribí un correo para que me enviara los datos.",
+"d2": "Ich schrieb ihm eine Mail, damit er mir die Daten schickt."
 },
 {
 "w": "recordar",
 "t": "sich erinnern",
 "p": "verbo",
 "e": "No recuerdo su nombre.",
-"d": "Ich erinnere mich nicht an seinen Namen."
+"d": "Ich erinnere mich nicht an seinen Namen.",
+"e2": "Si no recuerdo mal, nos conocimos en una boda.",
+"d2": "Wenn ich mich recht erinnere, haben wir uns auf einer Hochzeit kennengelernt."
 },
 {
 "w": "pedir",
@@ -491,35 +621,45 @@
 "p": "verbo",
 "e": "Pido una sopa, por favor.",
 "d": "Ich bestelle eine Suppe, bitte.",
-"g": "Pedir que + subjuntivo: Te pido que me ayudes. Stammvokal e wird zu i: pido, pides."
+"g": "Pedir que + subjuntivo: Te pido que me ayudes. Stammvokal e wird zu i: pido, pides.",
+"e2": "Le pedí que me explicara el problema con calma.",
+"d2": "Ich bat ihn, mir das Problem in Ruhe zu erklären."
 },
 {
 "w": "comprar",
 "t": "kaufen",
 "p": "verbo",
 "e": "Compramos fruta en el mercado.",
-"d": "Wir kaufen Obst auf dem Markt."
+"d": "Wir kaufen Obst auf dem Markt.",
+"e2": "Me compraría un coche si tuviera más ahorros.",
+"d2": "Ich würde mir ein Auto kaufen, wenn ich mehr Erspartes hätte."
 },
 {
 "w": "leer",
 "t": "lesen",
 "p": "verbo",
 "e": "Leo un libro cada mes.",
-"d": "Ich lese jeden Monat ein Buch."
+"d": "Ich lese jeden Monat ein Buch.",
+"e2": "Leí el informe entero antes de la reunión.",
+"d2": "Ich habe den ganzen Bericht vor dem Treffen gelesen."
 },
 {
 "w": "escuchar",
 "t": "zuhören",
 "p": "verbo",
 "e": "Escucho música en el bus.",
-"d": "Ich höre Musik im Bus."
+"d": "Ich höre Musik im Bus.",
+"e2": "Escucha con atención antes de sacar conclusiones.",
+"d2": "Hör aufmerksam zu, bevor du Schlüsse ziehst."
 },
 {
 "w": "ayudar",
 "t": "helfen",
 "p": "verbo",
 "e": "¿Me ayudas con esto?",
-"d": "Hilfst du mir dabei?"
+"d": "Hilfst du mir dabei?",
+"e2": "Me ayudó a superar una etapa muy difícil.",
+"d2": "Er half mir, eine sehr schwere Phase zu überwinden."
 },
 {
 "w": "gustar",
@@ -527,42 +667,54 @@
 "p": "verbo",
 "e": "Me gusta el café.",
 "d": "Ich mag Kaffee.",
-"g": "Gustar hat die Sache als Subjekt: Me gusta el café, me gustan los libros. Person im Dativ: me, te, le, nos, les."
+"g": "Gustar hat die Sache als Subjekt: Me gusta el café, me gustan los libros. Person im Dativ: me, te, le, nos, les.",
+"e2": "Me habría gustado que nos hubieras acompañado.",
+"d2": "Ich hätte mich gefreut, wenn du uns begleitet hättest."
 },
 {
 "w": "preguntar",
 "t": "fragen",
 "p": "verbo",
 "e": "Te pregunto algo.",
-"d": "Ich frage dich etwas."
+"d": "Ich frage dich etwas.",
+"e2": "Me preguntaron si estaba dispuesto a mudarme.",
+"d2": "Man fragte mich, ob ich bereit wäre umzuziehen."
 },
 {
 "w": "vida",
 "t": "Leben",
 "p": "sustantivo",
 "e": "La vida aquí es tranquila.",
-"d": "Das Leben hier ist ruhig."
+"d": "Das Leben hier ist ruhig.",
+"e2": "La vida da muchas vueltas y nunca se sabe qué pasará.",
+"d2": "Das Leben nimmt viele Wendungen, man weiß nie, was kommt."
 },
 {
 "w": "mundo",
 "t": "Welt",
 "p": "sustantivo",
 "e": "Quiero viajar por el mundo.",
-"d": "Ich will durch die Welt reisen."
+"d": "Ich will durch die Welt reisen.",
+"e2": "Hoy en día el mundo está más conectado que nunca.",
+"d2": "Heute ist die Welt vernetzter als je zuvor."
 },
 {
 "w": "hombre",
 "t": "Mann",
 "p": "sustantivo",
 "e": "Ese hombre es mi tío.",
-"d": "Dieser Mann ist mein Onkel."
+"d": "Dieser Mann ist mein Onkel.",
+"e2": "Es un hombre de pocas palabras pero de gran corazón.",
+"d2": "Er ist ein Mann weniger Worte, aber mit großem Herzen."
 },
 {
 "w": "mujer",
 "t": "Frau",
 "p": "sustantivo",
 "e": "Mi mujer trabaja mucho.",
-"d": "Meine Frau arbeitet viel."
+"d": "Meine Frau arbeitet viel.",
+"e2": "Fue la primera mujer en dirigir la empresa.",
+"d2": "Sie war die erste Frau an der Spitze des Unternehmens."
 },
 {
 "w": "niño",
@@ -570,7 +722,9 @@
 "p": "sustantivo",
 "e": "El niño juega en el parque.",
 "d": "Das Kind spielt im Park.",
-"g": "Weiblich: niña. Mehrere: niños."
+"g": "Weiblich: niña. Mehrere: niños.",
+"e2": "De niño pasaba los veranos en casa de mis abuelos.",
+"d2": "Als Kind verbrachte ich die Sommer bei meinen Großeltern."
 },
 {
 "w": "mano",
@@ -578,21 +732,27 @@
 "p": "sustantivo",
 "e": "Tengo frío en las manos.",
 "d": "Ich habe kalte Hände.",
-"g": "La mano ist weiblich, obwohl es auf -o endet."
+"g": "La mano ist weiblich, obwohl es auf -o endet.",
+"e2": "Echame una mano con esto, por favor.",
+"d2": "Hilf mir bitte kurz dabei."
 },
 {
 "w": "parte",
 "t": "Teil",
 "p": "sustantivo",
 "e": "Es una parte importante.",
-"d": "Das ist ein wichtiger Teil."
+"d": "Das ist ein wichtiger Teil.",
+"e2": "Gran parte del problema se debe a la falta de comunicación.",
+"d2": "Ein großer Teil des Problems liegt an mangelnder Kommunikation."
 },
 {
 "w": "lugar",
 "t": "Ort",
 "p": "sustantivo",
 "e": "Es un lugar muy bonito.",
-"d": "Das ist ein sehr schöner Ort."
+"d": "Das ist ein sehr schöner Ort.",
+"e2": "En lugar de quejarte, intenta buscar una solución.",
+"d2": "Statt dich zu beschweren, versuch eine Lösung zu finden."
 },
 {
 "w": "vez",
@@ -600,35 +760,45 @@
 "p": "sustantivo",
 "e": "Es la primera vez que vengo.",
 "d": "Ich komme zum ersten Mal.",
-"g": "Plural: veces. A veces = manchmal; otra vez = nochmal."
+"g": "Plural: veces. A veces = manchmal; otra vez = nochmal.",
+"e2": "Esta vez no pienso cometer el mismo error.",
+"d2": "Diesmal werde ich nicht denselben Fehler machen."
 },
 {
 "w": "cosa",
 "t": "Sache",
 "p": "sustantivo",
 "e": "Tengo muchas cosas que hacer.",
-"d": "Ich habe viele Dinge zu tun."
+"d": "Ich habe viele Dinge zu tun.",
+"e2": "Lo primero es tener claras las cosas que de verdad importan.",
+"d2": "Zuerst muss man sich klar machen, was wirklich zählt."
 },
 {
 "w": "país",
 "t": "Land",
 "p": "sustantivo",
 "e": "México es un país grande.",
-"d": "Mexiko ist ein großes Land."
+"d": "Mexiko ist ein großes Land.",
+"e2": "En ese país la vida cotidiana es muy distinta a la nuestra.",
+"d2": "In diesem Land ist der Alltag ganz anders als bei uns."
 },
 {
 "w": "noche",
 "t": "Nacht, Abend",
 "p": "sustantivo",
 "e": "Salimos por la noche.",
-"d": "Wir gehen abends aus."
+"d": "Wir gehen abends aus.",
+"e2": "Pasamos la noche en vela esperando noticias.",
+"d2": "Wir verbrachten die Nacht wach und warteten auf Nachrichten."
 },
 {
 "w": "nombre",
 "t": "Name",
 "p": "sustantivo",
 "e": "¿Cuál es tu nombre?",
-"d": "Wie heißt du?"
+"d": "Wie heißt du?",
+"e2": "No logro acordarme de su nombre, aunque me suena.",
+"d2": "Mir fällt sein Name nicht ein, obwohl er mir bekannt vorkommt."
 },
 {
 "w": "momento",
@@ -636,56 +806,72 @@
 "p": "sustantivo",
 "e": "Un momento, por favor.",
 "d": "Einen Moment, bitte.",
-"g": "Momento ist männlich, obwohl viele Wörter auf -mento so sind: el momento, el documento."
+"g": "Momento ist männlich, obwohl viele Wörter auf -mento so sind: el momento, el documento.",
+"e2": "En ese momento no me di cuenta de lo grave que era.",
+"d2": "In dem Moment merkte ich nicht, wie ernst es war."
 },
 {
 "w": "palabra",
 "t": "Wort",
 "p": "sustantivo",
 "e": "No conozco esta palabra.",
-"d": "Ich kenne dieses Wort nicht."
+"d": "Ich kenne dieses Wort nicht.",
+"e2": "No encuentro la palabra exacta para describirlo.",
+"d2": "Ich finde nicht das genaue Wort, um es zu beschreiben."
 },
 {
 "w": "calle",
 "t": "Straße",
 "p": "sustantivo",
 "e": "Vivo en esta calle.",
-"d": "Ich wohne in dieser Straße."
+"d": "Ich wohne in dieser Straße.",
+"e2": "La calle estaba cortada por obras y tuvimos que dar un rodeo.",
+"d2": "Die Straße war wegen Bauarbeiten gesperrt, wir mussten einen Umweg machen."
 },
 {
 "w": "hora",
 "t": "Stunde, Uhrzeit",
 "p": "sustantivo",
 "e": "¿Qué hora es?",
-"d": "Wie spät ist es?"
+"d": "Wie spät ist es?",
+"e2": "A estas horas ya deberían haber llegado.",
+"d2": "Um diese Zeit müssten sie längst angekommen sein."
 },
 {
 "w": "semana",
 "t": "Woche",
 "p": "sustantivo",
 "e": "Trabajo cinco días por semana.",
-"d": "Ich arbeite fünf Tage pro Woche."
+"d": "Ich arbeite fünf Tage pro Woche.",
+"e2": "Dentro de dos semanas tendremos los resultados.",
+"d2": "In zwei Wochen haben wir die Ergebnisse."
 },
 {
 "w": "dinero",
 "t": "Geld",
 "p": "sustantivo",
 "e": "No tengo mucho dinero.",
-"d": "Ich habe nicht viel Geld."
+"d": "Ich habe nicht viel Geld.",
+"e2": "Con el dinero que ahorré pude pagar la matrícula.",
+"d2": "Mit dem Geld, das ich gespart hatte, konnte ich die Studiengebühren bezahlen."
 },
 {
 "w": "comida",
 "t": "Essen",
 "p": "sustantivo",
 "e": "La comida está lista.",
-"d": "Das Essen ist fertig."
+"d": "Das Essen ist fertig.",
+"e2": "La comida casera siempre me recuerda a mi infancia.",
+"d2": "Hausmannskost erinnert mich immer an meine Kindheit."
 },
 {
 "w": "pequeño",
 "t": "klein",
 "p": "adjetivo",
 "e": "Vivimos en un apartamento pequeño.",
-"d": "Wir wohnen in einer kleinen Wohnung."
+"d": "Wir wohnen in einer kleinen Wohnung.",
+"e2": "Hasta el detalle más pequeño puede marcar la diferencia.",
+"d2": "Selbst das kleinste Detail kann den Unterschied machen."
 },
 {
 "w": "otro",
@@ -693,28 +879,36 @@
 "p": "adjetivo",
 "e": "Quiero otro café.",
 "d": "Ich möchte noch einen Kaffee.",
-"g": "Kein Artikel vor otro: otro café, nicht un otro café."
+"g": "Kein Artikel vor otro: otro café, nicht un otro café.",
+"e2": "Cada uno tiene su opinión, y la del otro merece respeto.",
+"d2": "Jeder hat seine Meinung, und die des anderen verdient Respekt."
 },
 {
 "w": "mismo",
 "t": "gleich, selbst",
 "p": "adjetivo",
 "e": "Tenemos el mismo problema.",
-"d": "Wir haben dasselbe Problem."
+"d": "Wir haben dasselbe Problem.",
+"e2": "Da lo mismo cómo lo hagas, siempre que quede bien.",
+"d2": "Es ist egal, wie du es machst, solange es gut wird."
 },
 {
 "w": "difícil",
 "t": "schwer",
 "p": "adjetivo",
 "e": "El examen fue difícil.",
-"d": "Die Prüfung war schwer."
+"d": "Die Prüfung war schwer.",
+"e2": "Resulta difícil decidir cuando hay tantas opciones.",
+"d2": "Es fällt schwer zu entscheiden, wenn es so viele Optionen gibt."
 },
 {
 "w": "fácil",
 "t": "leicht",
 "p": "adjetivo",
 "e": "Este ejercicio es fácil.",
-"d": "Diese Übung ist leicht."
+"d": "Diese Übung ist leicht.",
+"e2": "Es más fácil decirlo que hacerlo.",
+"d2": "Das ist leichter gesagt als getan."
 },
 {
 "w": "importante",
@@ -722,7 +916,9 @@
 "p": "adjetivo",
 "e": "Es importante dormir bien.",
 "d": "Es ist wichtig, gut zu schlafen.",
-"g": "Es importante que + subjuntivo, wenn eine Person gemeint ist: Es importante que duermas."
+"g": "Es importante que + subjuntivo, wenn eine Person gemeint ist: Es importante que duermas.",
+"e2": "Lo importante es que aprendamos de lo ocurrido.",
+"d2": "Wichtig ist, dass wir aus dem Geschehenen lernen."
 },
 {
 "w": "muy",
@@ -730,7 +926,9 @@
 "p": "adverbio",
 "e": "Estoy muy contento.",
 "d": "Ich bin sehr zufrieden.",
-"g": "Muy steht vor Adjektiven und Adverbien, mucho vor Nomen: muy grande, mucho trabajo."
+"g": "Muy steht vor Adjektiven und Adverbien, mucho vor Nomen: muy grande, mucho trabajo.",
+"e2": "Estaba muy cansado, aun así terminó el informe.",
+"d2": "Er war sehr müde, schloss den Bericht aber trotzdem ab."
 },
 {
 "w": "bien",
@@ -738,21 +936,27 @@
 "p": "adverbio",
 "e": "Hablas muy bien.",
 "d": "Du sprichst sehr gut.",
-"g": "Bien ist ein Adverb beim Verb (hablas bien), bueno ein Adjektiv beim Nomen (un libro bueno)."
+"g": "Bien ist ein Adverb beim Verb (hablas bien), bueno ein Adjektiv beim Nomen (un libro bueno).",
+"e2": "Le salió bien el examen pese a no haber dormido.",
+"d2": "Die Prüfung lief gut, obwohl er nicht geschlafen hatte."
 },
 {
 "w": "ya",
 "t": "schon, bereits",
 "p": "adverbio",
 "e": "Ya terminé el trabajo.",
-"d": "Ich habe die Arbeit schon beendet."
+"d": "Ich habe die Arbeit schon beendet.",
+"e2": "Ya no tiene sentido seguir discutiendo.",
+"d2": "Es hat keinen Sinn mehr, weiter zu streiten."
 },
 {
 "w": "hoy",
 "t": "heute",
 "p": "adverbio",
 "e": "Hoy hace mucho calor.",
-"d": "Heute ist es sehr heiß."
+"d": "Heute ist es sehr heiß.",
+"e2": "Hoy en día casi todo se resuelve por internet.",
+"d2": "Heutzutage erledigt man fast alles im Internet."
 },
 {
 "w": "antes",
@@ -760,7 +964,9 @@
 "p": "adverbio",
 "e": "Antes vivía en otra ciudad.",
 "d": "Früher habe ich in einer anderen Stadt gewohnt.",
-"g": "Antes de + Infinitiv: antes de comer. Mit eigenem Subjekt: antes de que + subjuntivo."
+"g": "Antes de + Infinitiv: antes de comer. Mit eigenem Subjekt: antes de que + subjuntivo.",
+"e2": "Antes de que te des cuenta, ya habrá pasado el verano.",
+"d2": "Ehe du dich versiehst, ist der Sommer vorbei."
 },
 {
 "w": "después",
@@ -768,20 +974,26 @@
 "p": "adverbio",
 "e": "Primero comemos y después salimos.",
 "d": "Zuerst essen wir und danach gehen wir.",
-"g": "Después de + Infinitiv: después de comer. Mit Zukunft: después de que + subjuntivo."
+"g": "Después de + Infinitiv: después de comer. Mit Zukunft: después de que + subjuntivo.",
+"e2": "Después de que terminemos, iremos a celebrarlo.",
+"d2": "Nachdem wir fertig sind, gehen wir feiern."
 },
 {
 "w": "entonces",
 "t": "dann, also",
 "p": "adverbio",
 "e": "Entonces, ¿qué hacemos?",
-"d": "Also, was machen wir?"
+"d": "Also, was machen wir?",
+"e2": "Si ya lo sabías, entonces ¿por qué no dijiste nada?",
+"d2": "Wenn du es schon wusstest, warum hast du dann nichts gesagt?"
 },
 {
 "w": "por favor",
 "t": "bitte",
 "p": "otros",
 "e": "Un café, por favor.",
-"d": "Einen Kaffee, bitte."
+"d": "Einen Kaffee, bitte.",
+"e2": "¿Serías tan amable de repetirlo, por favor?",
+"d2": "Wärst du so freundlich, es bitte zu wiederholen?"
 }
 ]
