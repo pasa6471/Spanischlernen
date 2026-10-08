@@ -30,6 +30,10 @@ nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--s);bord
 nav button{flex:1;margin:0;border:0;border-right:3px solid var(--ink);box-shadow:none;background:var(--s);color:var(--ink);padding:19px 2px 14px;position:relative}nav button:last-child{border-right:0}nav button:active{transform:none}
 nav .on{background:var(--y);color:var(--k)}nav .on::after{content:'';position:absolute;left:50%;top:6px;width:8px;height:8px;margin-left:-4px;background:var(--r);border:2px solid var(--k);transform:rotate(45deg)}
 button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--r);outline-offset:3px}
+select{font:inherit;font-weight:800;color:var(--k);background:var(--y);border:3px solid var(--ink);border-radius:0;padding:2px 6px;margin:0 4px;box-shadow:3px 3px 0 var(--sh)}
+.q.ok{border-left:14px solid var(--ok)}.q.no{border-left:14px solid var(--no)}.pri small{display:block;font-weight:400}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.82rem;margin:6px 0 12px}td,th{border:2px solid var(--ink);padding:3px 6px;text-align:left;white-space:nowrap}th{background:var(--y);color:var(--k)}
+.pri.y{background:var(--y)}.sbw{min-height:46px;margin:8px 0}.hl{background:var(--y);color:var(--k);padding:0 6px;border:2px solid var(--k)}hr{border:0;border-top:2px dashed var(--ink);margin:14px 0}button:disabled{opacity:.9}
 </style></head><body><main id="v"></main><nav id="n"></nav>
 <script>
 const $=s=>document.querySelector(s),V=$('#v');
@@ -54,7 +58,60 @@ V.innerHTML=`<h1>Wörter</h1><div class=seg>${['alle','offen','gelernt'].map(f=>
 function chk(said){const t=tw[lv],c=cmp(t,said);res=`<p class=ex>${c.h}</p><p class=mu>${tw[dk[lv]]}</p>`+(c.miss.length?`<p>Abweichungen: <b>${c.miss.join(', ')}</b>. Höre den Satz noch einmal und achte auf diese Wörter.</p>`:'<p class=ok><b>Richtig.</b></p>')+(um=='sprechen'?`<p class=mu>Erkannt: ${said}</p>`+TP.filter(x=>x[0].test(t)).map(x=>`<p class=mu>${x[1]}</p>`).join(''):'');ueben()}
 function ueben(nw){if(nw||!tw){tw=W[Math.floor(Math.random()*W.length)];res=''}const h=um=='hoeren',t=tw[lv],sg=(a,v,f)=>`<div class=seg>${a.map(([k,x])=>`<button class="${k==v?'on':''}" onclick="${f(k)}">${x}</button>`).join('')}</div>`;
 V.innerHTML=`<h1>Üben</h1>`+sg([['hoeren','Hören'],['sprechen','Sprechen']],um,k=>`um='${k}';res='';ueben()`)+sg([['e','A2'],['e2','B2']],lv,k=>`lv='${k}';res='';ueben()`)+`<div class=card>`+(h?`<button class=pri data-s="${t}">Satz abspielen</button><input id=i placeholder="Was hast du gehört?" autocapitalize=off><button onclick="chk($('#i').value)">Prüfen</button>`:`<p class=ex>${t}</p><p class=mu>${tw[dk[lv]]}</p><button data-s="${t}">Vorbild anhören</button><button class=pri onclick="listen(chk)">Satz sprechen</button>`)+`<div>${res}</div></div><button onclick="ueben(1)">Nächster Satz</button>`}
-const T={lernen,woerter,ueben},L={lernen:'Lernen',woerter:'Wörter',ueben:'Üben'};
+let EX=[],es=null,ea={},ech=0;
+fetch('exercises.json').then(r=>r.json()).then(d=>{EX=d;EX.forEach((x,i)=>x.s.forEach((q,j)=>q.k=i+':'+j))});
+const qh=(q,i)=>{const r=ech?(ea[i]===q.a?'ok':'no'):'',sel=`<select ${ech?'disabled':''} onchange="ea[${i}]=this.value===''?undefined:+this.value"><option value="">...</option>${q.o.map((o,j)=>`<option value=${j} ${ea[i]===j?'selected':''}>${o}</option>`).join('')}</select>`;
+return `<div class="card q ${r}"><p class=ex>${q.q.replace('___',sel)}</p>${ech?`<p class=${r}><b>${r=='ok'?'Richtig':'Falsch, richtig ist: '+q.o[q.a]}</b></p><p class=mu>${q.x}</p>`:''}</div>`};
+const CJ=`ser|Presente|soy,eres,es,somos,son
+ser|Indefinido|fui,fuiste,fue,fuimos,fueron
+ser|Imperfecto|era,eras,era,éramos,eran
+estar|Presente|estoy,estás,está,estamos,están
+estar|Indefinido|estuve,estuviste,estuvo,estuvimos,estuvieron
+estar|Imperfecto|estaba,estabas,estaba,estábamos,estaban
+ir|Presente|voy,vas,va,vamos,van
+ir|Indefinido|fui,fuiste,fue,fuimos,fueron
+ir|Imperfecto|iba,ibas,iba,íbamos,iban
+tener|Presente|tengo,tienes,tiene,tenemos,tienen
+tener|Indefinido|tuve,tuviste,tuvo,tuvimos,tuvieron
+tener|Imperfecto|tenía,tenías,tenía,teníamos,tenían
+hacer|Presente|hago,haces,hace,hacemos,hacen
+hacer|Indefinido|hice,hiciste,hizo,hicimos,hicieron
+hacer|Imperfecto|hacía,hacías,hacía,hacíamos,hacían
+poder|Presente|puedo,puedes,puede,podemos,pueden
+poder|Indefinido|pude,pudiste,pudo,pudimos,pudieron
+poder|Imperfecto|podía,podías,podía,podíamos,podían
+querer|Presente|quiero,quieres,quiere,queremos,quieren
+querer|Indefinido|quise,quisiste,quiso,quisimos,quisieron
+querer|Imperfecto|quería,querías,quería,queríamos,querían
+hablar|Presente|hablo,hablas,habla,hablamos,hablan
+hablar|Indefinido|hablé,hablaste,habló,hablamos,hablaron
+hablar|Imperfecto|hablaba,hablabas,hablaba,hablábamos,hablaban
+comer|Presente|como,comes,come,comemos,comen
+comer|Indefinido|comí,comiste,comió,comimos,comieron
+comer|Imperfecto|comía,comías,comía,comíamos,comían
+vivir|Presente|vivo,vives,vive,vivimos,viven
+vivir|Indefinido|viví,viviste,vivió,vivimos,vivieron
+vivir|Imperfecto|vivía,vivías,vivía,vivíamos,vivían
+decir|Presente|digo,dices,dice,decimos,dicen
+decir|Indefinido|dije,dijiste,dijo,dijimos,dijeron
+decir|Imperfecto|decía,decías,decía,decíamos,decían`.split('\n').map(l=>{const a=l.split('|');return{v:a[0],t:a[1],f:a[2].split(',')}}),PN=['yo','tú','él/ella','nosotros','ellos/ustedes'];
+let gm=null,rv,cj,sb,fj,er=JSON.parse(localStorage.er||'{}');
+const miss=(k,ok)=>{if(ok){if(er[k]&&!--er[k])delete er[k]}else er[k]=(er[k]||0)+1;localStorage.er=JSON.stringify(er)},rnd=a=>a[Math.floor(Math.random()*a.length)],sec=()=>es==='r'?rv:EX[es],rec=()=>sec().s.forEach((q,i)=>miss(q.k,ea[i]===q.a)),back=`<button onclick="gm=null;es=null;gram()">Alle Themen</button>`;
+const mkrv=()=>({n:'Fehler wiederholen',r:'<p>Hier stehen deine schwächsten Aufgaben. Richtig gelöste werden seltener, falsche häufiger gezeigt.</p>',s:EX.flatMap(x=>x.s).filter(q=>er[q.k]).sort((a,b)=>er[b.k]-er[a.k]).slice(0,10)});
+function konj(n){if(n||!cj){const P=[];CJ.forEach((c,i)=>PN.forEach((_,p)=>{for(let r=0;r<(er['c:'+i+':'+p]?4:1);r++)P.push([i,p])}));const[i,p]=rnd(P);cj={i,p,a:'',done:0}}const c=CJ[cj.i],p=cj.p;
+V.innerHTML=back+`<h1>Konjugation</h1><div class=card><p class=mu>${c.t}</p><p class=ex><b>${c.v}</b>, ${PN[p]}</p><input id=cv autocapitalize=off autocomplete=off value="${cj.a}" ${cj.done?'disabled':''}>`+(cj.done?`<p class=${cj.ok?'ok':'no'}><b>${cj.ok?'Richtig':'Falsch, richtig ist: '+c.f[p]}</b></p>${!cj.ok&&nm(cj.a).join()==nm(c.f[p]).join()?'<p class=mu>Fast: nur ein Akzent fehlt oder ist falsch. Beispiel: hablo (Präsens) und habló (Indefinido).</p>':''}<button class=pri onclick="konj(1)">Weiter</button>`:`<button class=pri onclick="kchk()">Prüfen</button>`)+`</div>`}
+function kchk(){cj.a=$('#cv').value.trim().toLowerCase();cj.ok=cj.a==CJ[cj.i].f[cj.p];cj.done=1;miss('c:'+cj.i+':'+cj.p,cj.ok);konj()}
+function satz(n){if(n||!sb){const w=rnd(W),l=rnd(['e','e2']),t=w[l],a=t.split(' ');sb={t,d:w[dk[l]],a,p:a.map((x,i)=>i).sort(()=>Math.random()-.5),u:[],done:0}}const b=sb;
+V.innerHTML=back+`<h1>Satzbau</h1><div class=card><p class=mu>${b.d}</p><div class=sbw>${b.u.map(i=>`<button class=ok ${b.done?'disabled':''} onclick="sbm(${i},1)">${b.a[i]}</button>`).join('')||'<span class=mu>Tippe die Wörter in der richtigen Reihenfolge an.</span>'}</div><hr><div>${b.p.filter(i=>!b.u.includes(i)).map(i=>`<button onclick="sbm(${i},0)">${b.a[i]}</button>`).join('')}</div>`+(b.done?`<hr><p class=${b.ok?'ok':'no'}><b>${b.ok?'Richtig':'Nicht ganz'}</b></p><p class=ex>${b.t}</p>${b.ok?'':'<p class=mu>Manchmal ist auch eine andere Reihenfolge möglich. Vergleiche mit dem Vorbild.</p>'}<button data-s="${b.t}">Anhören</button><button class=pri onclick="satz(1)">Weiter</button>`:b.u.length==b.a.length?`<button class=pri onclick="sb.done=1;sb.ok=sb.u.map(i=>sb.a[i]).join(' ')==sb.t;satz()">Prüfen</button>`:'')+`</div>`}
+function sbm(i,r){sb.u=r?sb.u.filter(x=>x!=i):[...sb.u,i];satz()}
+function fjag(n){if(n||!fj){const x=rnd(EX),q=rnd(x.s),good=Math.random()<.5;fj={q,good,o:good?q.a:rnd(q.o.map((_,k)=>k).filter(k=>k!=q.a)),done:0}}const q=fj.q;
+V.innerHTML=back+`<h1>Richtig oder falsch?</h1><div class=card><p class=ex>${q.q.replace('___','<b class=hl>'+q.o[fj.o]+'</b>')}</p>`+(fj.done?`<p class=${fj.ok?'ok':'no'}><b>${fj.ok?'Richtig eingeschätzt':'Leider falsch eingeschätzt'}</b></p><p>${fj.good?'Der Satz ist richtig.':'Der Satz ist falsch, richtig wäre: <b>'+q.o[q.a]+'</b>.'}</p><p class=mu>${q.x}</p><button class=pri onclick="fjag(1)">Weiter</button>`:`<div class=row><button class=ok onclick="fj2(1)">Richtig</button><button class=no onclick="fj2(0)">Falsch</button></div>`)+`</div>`}
+function fj2(a){fj.done=1;fj.ok=!!a==fj.good;miss(fj.q.k,fj.ok);fjag()}
+function gram(){if(gm=='k')return konj();if(gm=='s')return satz();if(gm=='f')return fjag();
+if(es===null){const n=Object.keys(er).filter(k=>/^\d/.test(k)).length;V.innerHTML=`<h1>Grammatik</h1><p class=mu>Themen</p>`+EX.map((x,i)=>`<button class=pri onclick="es=${i};ea={};ech=0;gram()">${x.n}<small>${x.s.length} Aufgaben</small></button>`).join('')+`<p class=mu>Trainingsarten</p>`+[['k','Konjugation tippen','Formen selbst schreiben'],['s','Satzbau','Wörter in die richtige Reihenfolge bringen'],['f','Richtig oder falsch?','Fehler in Sätzen erkennen']].map(([k,t,d])=>`<button class="pri y" onclick="gm='${k}';gram()">${t}<small>${d}</small></button>`).join('')+`<button class="pri y" onclick="rv=mkrv();es='r';ea={};ech=0;gram()">Fehler wiederholen<small>${n} offene Aufgaben</small></button>`;return}
+const x=sec(),sc=x.s.filter((q,i)=>ea[i]===q.a).length;
+V.innerHTML=back+`<h1>${x.n}</h1>`+(x.s.length?`<details class=card><summary><b>Merkkasten</b></summary>${x.r}</details>`+(ech?`<div class=card><p class=ex><b>${sc} von ${x.s.length} richtig</b></p><button onclick="ea={};ech=0;gram()">Nochmal</button></div>`:'')+x.s.map(qh).join('')+(ech?'':`<button class=pri onclick="ech=1;rec();gram();scrollTo(0,0)">Prüfen</button>`):'<p class=ex>Keine offenen Fehler. Löse zuerst ein paar Themen oder Fehlerjagd-Aufgaben.</p>')}
+const T={lernen,woerter,ueben,gram},L={lernen:'Lernen',woerter:'Wörter',ueben:'Üben',gram:'Grammatik'};
 function go(t){T[t]();$('#n').innerHTML=Object.keys(T).map(k=>`<button class="${k==t?'on':''}" onclick="go('${k}')">${L[k]}</button>`).join('')}
 fetch('words.json').then(r=>r.json()).then(d=>{W=d;go('lernen')});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
