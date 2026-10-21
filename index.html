@@ -1,42 +1,44 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Palabra</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#ffc21a"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg">
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Palabra</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800&display=swap"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#ffb400"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg">
 <style>
-:root{--bg:#fff1c1;--s:#fff;--ink:#14172b;--k:#14172b;--mu:#4a4f6a;--ac:#00b3b3;--y:#ffc21a;--r:#ff3d8b;--ok:#00875a;--no:#d6246e;--sh:#14172b;color-scheme:light dark}
-@media(prefers-color-scheme:dark){:root{--bg:#14172b;--s:#232850;--ink:#f6efe2;--mu:#b3b8d4;--sh:#ffc21a;--ok:#43d6a0;--no:#ff6aa8}}
+:root{--bg:#fff4de;--s:#fff;--ink:#231942;--k:#231942;--y:#ffb400;--t:#0a7f7b;--m:#c2185b;--mu:#5a5073;--ln:#ecdcb8;--tt:#0a7f7b;--mm:#c2185b;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#1b1430;--s:#2a2046;--ink:#fff4de;--mu:#c8bde0;--ln:#3b2f5e;--tt:#3dd6c8;--mm:#ff6aa8}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif;padding-bottom:calc(70px + env(safe-area-inset-bottom))}
-body::before{content:'';position:fixed;top:0;left:0;right:0;z-index:5;height:calc(14px + env(safe-area-inset-top));border-bottom:3px solid var(--k);background:repeating-linear-gradient(90deg,var(--ac) 0 30px,var(--y) 30px 38px,var(--r) 38px 44px,var(--y) 44px 52px)}
-main{max-width:560px;margin:auto;padding:calc(36px + env(safe-area-inset-top)) 16px 16px}
-h1{font:900 2.3rem/1.05 'Arial Black','Archivo Black',Impact,sans-serif;margin:.1em 0 .6em;letter-spacing:-.02em;text-transform:lowercase}
-h1::after{content:'';display:block;width:10px;height:10px;margin:16px 0 0 4px;background:var(--y);border:2px solid var(--k);transform:rotate(45deg);box-shadow:20px 0 0 -2px var(--ac),20px 0 0 0 var(--k),40px 0 0 -2px var(--r),40px 0 0 0 var(--k)}
-.mu{color:var(--mu)}.ok{color:var(--ok)}.no{color:var(--no)}.ex{font:1.2rem/1.45 Georgia,serif;margin:.3em 0 .5em}
-.card{background:var(--s);border:3px solid var(--ink);border-radius:0;padding:18px 20px;margin:18px 8px 18px 0;box-shadow:7px 7px 0 var(--sh)}
-.arch{border-radius:150px 150px 0 0;padding:50px 22px 20px;text-align:center}
-.arch h1{font-size:3rem;margin:.05em 0 .6em}.arch h1::after{margin:16px auto 0;position:relative;left:-20px}.left{text-align:left}
-.sen{margin:14px 0 0;padding-top:12px;border-top:2px dashed var(--ink)}.sen:first-of-type{border-top:0}
-.tag{display:inline-block;background:var(--r);color:var(--k);border:2px solid var(--k);font-weight:900;font-size:.72rem;padding:0 8px;letter-spacing:.06em}.tag.b{background:var(--ac)}
-details.card{padding:14px 18px}summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px}summary::-webkit-details-marker{display:none}
-summary .n{flex:none;min-width:36px;height:36px;display:grid;place-items:center;background:var(--y);color:var(--k);border:2px solid var(--k);font-weight:900;font-size:.8rem}summary .t{flex:1}
-details details{margin-top:12px;border-top:2px dashed var(--ink);padding-top:10px}details details summary{font-weight:800;text-decoration:underline}
-button,input{font:inherit}
-button{font-weight:800;color:var(--k);background:var(--y);border:3px solid var(--ink);border-radius:0;padding:9px 16px;margin:6px 8px 6px 0;box-shadow:4px 4px 0 var(--sh);cursor:pointer}
-button:active{transform:translate(4px,4px);box-shadow:none}
-.pri{background:var(--r);width:calc(100% - 4px);margin:14px 0;padding:14px;font-size:1.05rem}
-button.ok{background:var(--ac)}button.no{background:var(--r)}
-input{width:calc(100% - 4px);padding:12px;color:var(--ink);background:var(--s);border:3px solid var(--ink);border-radius:0;box-shadow:4px 4px 0 var(--sh);margin:10px 0}
-.row{display:flex;gap:10px}.row button{flex:1;margin:6px 4px 6px 0}
-.seg{display:flex;margin:14px 8px 14px 0;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--sh)}.seg button{flex:1;margin:0;box-shadow:none;border:0;background:var(--s);color:var(--ink)}.seg button+button{border-left:3px solid var(--ink)}.seg .on{background:var(--y);color:var(--k)}.seg button:active{transform:none}
-.dot{flex:none;width:14px;height:14px;border:3px solid var(--ink);background:var(--s);transform:rotate(45deg)}.dot.ok{background:var(--r)}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--s);border-top:3px solid var(--ink);padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;margin:0;border:0;border-right:3px solid var(--ink);box-shadow:none;background:var(--s);color:var(--ink);padding:19px 2px 14px;position:relative}nav button:last-child{border-right:0}nav button:active{transform:none}
-nav .on{background:var(--y);color:var(--k)}nav .on::after{content:'';position:absolute;left:50%;top:6px;width:8px;height:8px;margin-left:-4px;background:var(--r);border:2px solid var(--k);transform:rotate(45deg)}
-button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--r);outline-offset:3px}
-select{font:inherit;font-weight:800;color:var(--k);background:var(--y);border:3px solid var(--ink);border-radius:0;padding:2px 6px;margin:0 4px;box-shadow:3px 3px 0 var(--sh)}
-.q.ok{border-left:14px solid var(--ok)}.q.no{border-left:14px solid var(--no)}.pri small{display:block;font-weight:400}
-.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.82rem;margin:6px 0 12px}td,th{border:2px solid var(--ink);padding:3px 6px;text-align:left;white-space:nowrap}th{background:var(--y);color:var(--k)}
-.pri.y{background:var(--y)}.sbw{min-height:46px;margin:8px 0}.hl{background:var(--y);color:var(--k);padding:0 6px;border:2px solid var(--k)}hr{border:0;border-top:2px dashed var(--ink);margin:14px 0}button:disabled{opacity:.9}
-</style></head><body><main id="v"></main><nav id="n"></nav>
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.5 'Rubik',system-ui,sans-serif}
+#app{max-width:560px;margin:auto;padding-bottom:110px}
+#hd{background:var(--y);color:var(--k);padding:calc(28px + env(safe-area-inset-top)) 24px 26px;min-height:230px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;font-weight:800;font-size:13px;letter-spacing:.18em}
+#ht{margin-top:auto}
+h1{font:800 clamp(2.6rem,15vw,4.8rem)/1 'Rubik',system-ui,sans-serif;letter-spacing:-.03em;margin:16px 0 0;overflow-wrap:anywhere}
+h1 .meta{display:block;font-weight:500;font-size:15px;letter-spacing:0;margin-bottom:6px}
+#sc{height:14px;background:radial-gradient(circle at 50% 0,var(--y) 0 13px,transparent 14px) 0 0/28px 14px repeat-x}
+main{padding:22px 24px}
+.mu,small{color:var(--mu)}.ok{color:var(--tt)}.no{color:var(--mm)}small{display:block}
+.ex{font-size:19px;line-height:1.4;margin:0 0 6px}
+button{font:800 15px 'Rubik',system-ui,sans-serif;background:var(--k);color:var(--y);border:0;border-radius:12px;padding:11px 20px;margin:4px 8px 4px 0;cursor:pointer}
+button:active{transform:scale(.97)}.sm{padding:6px 12px;font-size:13px}
+.pri{background:var(--m);color:#fff;width:100%;height:58px;border-radius:16px;font-size:17px;margin:16px 0}
+.pri.y{background:var(--y);color:var(--k);height:auto;padding:14px 20px;text-align:left}.pri small{color:inherit;font-weight:500}
+button.ok{background:var(--t);color:#fff}button.no{background:var(--m);color:#fff}
+.row{display:flex;gap:10px}.row button{flex:1;margin:6px 0}
+.card{background:var(--s);border-radius:20px;padding:18px 20px;margin:14px 0}
+.sen{display:flex;gap:14px;align-items:flex-start;margin:18px 0}.sen>div{flex:1}
+.tag{flex:none;background:var(--t);color:#fff;font:800 12px 'Rubik',sans-serif;padding:5px 9px;border-radius:8px}.tag.b{background:var(--k)}
+details.card{padding:14px 18px}summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px}summary::-webkit-details-marker{display:none}summary .t{flex:1}
+.n{flex:none;min-width:44px;height:32px;display:grid;place-items:center;background:var(--y);color:var(--k);border-radius:8px;font-weight:800;font-size:.8rem;padding:0 6px}
+details details{margin-top:12px;border-top:2px dashed var(--ln);padding-top:10px}details details summary{font-weight:800;text-decoration:underline}
+input{width:100%;padding:13px 16px;font:inherit;color:var(--ink);background:var(--s);border:2px solid var(--k);border-radius:12px;margin:8px 0}
+select{font:800 1rem 'Rubik',sans-serif;background:var(--y);color:var(--k);border:0;border-radius:8px;padding:3px 8px;margin:0 4px}
+.seg{display:flex;background:var(--k);border-radius:16px;padding:5px;gap:4px;margin:14px 0}.seg button{flex:1;margin:0;background:none;color:#fff4de}.seg .on{background:var(--y);color:var(--k)}
+.dot{flex:none;width:14px;height:14px;border-radius:50%;border:2px solid var(--mu)}.dot.ok{background:var(--t);border-color:var(--t)}
+.q.ok{box-shadow:inset 8px 0 var(--t)}.q.no{box-shadow:inset 8px 0 var(--m)}.hl{background:var(--y);color:var(--k);padding:0 6px;border-radius:4px}
+hr{border:0;border-top:2px dashed var(--ln);margin:14px 0}.sbw{min-height:46px;margin:8px 0}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.82rem;margin:6px 0 12px}td,th{padding:5px 8px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--ln)}th{background:var(--y);color:var(--k)}
+nav{position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom));max-width:528px;margin:auto;background:var(--k);border-radius:20px;display:flex;padding:6px;gap:4px;z-index:9}
+nav button{flex:1;height:48px;margin:0;padding:0;border-radius:14px;background:none;color:#fff4de;font-size:.88rem}nav .on{background:var(--y);color:var(--k)}
+button:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid var(--m);outline-offset:2px}
+</style></head><body><div id="app"><header id="hd"><div class="top"><span>PALABRA</span><span id="cnt"></span></div><div id="ht"></div></header><div id="sc"></div><main id="v"></main></div><nav id="n"></nav>
 <script>
-const $=s=>document.querySelector(s),V=$('#v');
+const $=s=>document.querySelector(s),V={set innerHTML(h){const m=h.match(/<h1[\s\S]*?<\/h1>/);$('#ht').innerHTML=m?m[0]:'';$('#v').innerHTML=m?h.replace(m[0],''):h;$('#cnt').textContent=Object.values(S).filter(x=>x.lv>=1).length+' / '+W.length}};
 let W=[],S=JSON.parse(localStorage.es||'{}'),cur,rev=0,fl='alle',um='hoeren',res='',tw,lv='e';
 const sv=()=>localStorage.es=JSON.stringify(S),D=864e5,IV=[1,3,7,16,40];
 const nm=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,'').split(/\s+/).filter(Boolean);
@@ -45,18 +47,30 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b)
 function listen(cb){const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R)return alert('Spracherkennung fehlt in diesem Browser. Nutze Chrome (Android) oder Safari.');const r=new R();r.lang='es-MX';r.onresult=e=>cb(e.results[0][0].transcript);r.onerror=e=>alert('Mikrofon: '+e.error);r.start()}
 function cmp(t,said){const a=nm(said),miss=[];const h=t.split(' ').map(w=>{const ok=a.includes(nm(w)[0]);if(!ok)miss.push(w.replace(/[¿?¡!.,]/g,''));return `<span class="${ok?'ok':'no'}">${w}</span>`}).join(' ');return{h,miss}}
 const TP=[[/rr|\br/i,'r am Wortanfang und rr: Zungenspitze rollt.'],[/j|g[ei]/i,'j, ge, gi: hauchiger Laut wie das ch in "ach".'],[/ll|y/i,'ll und y: wie das j in "Jahr".'],[/z|c[ei]/i,'z, ce, ci: einfaches s (Lateinamerika, kein Lispeln).'],[/v/i,'v: wird wie b gesprochen.'],[/h/i,'h: stumm.'],[/ñ/i,'ñ: wie nj in "Anja".'],[/qu|gu[ei]/i,'qu, gue, gui: das u bleibt stumm.']];
-const GP={verbo:'Verben ändern die Endung je nach Person: yo, tú, él/ella, nosotros, ellos/ustedes. Lateinamerika: ustedes statt vosotros.',sustantivo:'Jedes Nomen ist männlich (el) oder weiblich (la). Adjektive passen sich an.',adjetivo:'Adjektive stehen meist hinter dem Nomen und passen sich an Geschlecht und Zahl an.',adverbio:'Adverbien sind unveränderlich und stehen meist beim Verb.',conjunción:'Bindewörter verbinden Sätze und bleiben unverändert.',otros:'Feste Wendung, unverändert.'};
-const gr=w=>`<details><summary>Grammatik</summary><p class=mu>${w.g||GP[w.p]}</p></details>`;
+const GP={verbo:'Verben ändern die Endung je nach Person: yo, tú, él/ella, nosotros, ellos/ustedes. Lateinamerika: ustedes statt vosotros.',sustantivo:'Jedes Nomen ist männlich (el) oder weiblich (la). Adjektive passen sich an.',adjetivo:'Adjektive stehen meist hinter dem Nomen und passen sich an Geschlecht und Zahl an.',adverbio:'Adverbien sind unveränderlich und stehen meist beim Verb.',conjunción:'Bindewörter verbinden Sätze und bleiben unverändert.',otros:'Feste Wendung, unverändert.',preposición:'Präpositionen bleiben unverändert. Mit Artikel verschmelzen a und de: al, del.',determinante:'Stimmt in Geschlecht und Zahl mit dem Nomen überein.',pronombre:'Pronomen ersetzen ein Nomen. In Lateinamerika ustedes statt vosotros.'};
+const gr=w=>{const c=w.c,r=a=>a.map(x=>`<td>${x}</td>`).join('');return `<details><summary>Grammatik</summary><p class=mu>${w.g||GP[w.p]||''}</p>${c?`<div class=tw><table><tr><th></th><th>yo</th><th>tú</th><th>él/ella</th><th>nosotros</th><th>ellos</th></tr><tr><td>Presente</td>${r(c[0])}</tr><tr><td>Indefinido</td>${r(c[1])}</tr></table></div>`:''}</details>`};
 function nextW(){const n=Date.now();return W.filter(w=>S[w.w]&&S[w.w].due<=n).sort((a,b)=>S[a.w].due-S[b.w].due)[0]||W.find(w=>!S[w.w])||W[0]}
-const lvT={e:'A2',e2:'B2'},dk={e:'d',e2:'d2'};
-const sentence=(w,r)=>['e','e2'].map(l=>`<div class=sen><span class="tag ${l=='e2'?'b':''}">${lvT[l]}</span><p class=ex>${w[l]}</p>${r?`<p class=mu>${w[dk[l]]}</p>`:''}<button data-s="${w[l]}">Anhören</button></div>`).join('');
-function lernen(){cur=cur||nextW();const w=cur,g=Object.values(S).filter(x=>x.lv>=1).length;
-V.innerHTML=`<p class=mu>${g} von ${W.length} gelernt</p><div class="card arch"><p class=mu>${w.p}, Rang ${W.indexOf(w)+1}</p><h1>${w.w}</h1><button data-s="${w.w}">Wort anhören</button>${rev?`<p><b>${w.t}</b></p>`:''}<div class=left>${sentence(w,rev)}${gr(w)}</div></div>`+(rev?`<div class=row><button class=no onclick=ans(0)>Nochmal</button><button class=ok onclick=ans(1)>Gewusst</button></div>`:`<button class=pri onclick="rev=1;lernen()">Übersetzung zeigen</button>`)}
+const lvT={e:'A2',e2:'B2'},dk={e:'d',e2:'d2'},has=w=>w.e&&w.e2,P=()=>W.filter(has);let EN=JSON.parse(localStorage.en||'{}');
+const wc=t=>t.split(/\s+/).length,jf=u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()});
+async function enrich(w){if(w.e)return;const q=encodeURIComponent(w.w);
+const[a,b]=await Promise.all([jf(`https://tatoeba.org/en/api_v0/search?from=spa&to=deu&query=${q}&sort=words&orphans=no&unapproved=no`).catch(()=>null),w.t?null:jf(`https://api.mymemory.translated.net/get?q=${q}&langpair=es|de`).catch(()=>null)]);
+const o={},ps=((a&&a.results)||[]).map(r=>({e:r.text,d:(r.translations||[]).flat(2).find(t=>t&&t.lang=='deu')})).filter(p=>p.d&&wc(p.e)>=3&&wc(p.e)<=22).map(p=>({e:p.e,d:p.d.text})),sh=ps.filter(p=>wc(p.e)<=9),lg=ps.filter(p=>wc(p.e)>=10);
+if(sh[0]){o.e=sh[0].e;o.d=sh[0].d}if(lg[0]){o.e2=lg[0].e;o.d2=lg[0].d}
+const tr=b&&b.responseData&&b.responseData.translatedText;if(tr&&tr.toLowerCase()!=w.w)o.t=tr;
+if(!o.t&&!o.e)throw new Error('offline');Object.assign(w,o,{auto:1});EN[w.w]=o;try{localStorage.en=JSON.stringify(EN)}catch(e){}}
+const sentence=(w,r)=>['e','e2'].filter(l=>w[l]).map(l=>`<div class=sen><span class="tag ${l=='e2'?'b':''}">${lvT[l]}</span><div><p class=ex>${w[l]}</p>${r?`<p class=mu>${w[dk[l]]}</p>`:''}<button class=sm data-s="${w[l]}">Anhören</button></div></div>`).join('')+(w.auto?'<p class=mu>Übersetzung und Sätze automatisch aus MyMemory und Tatoeba, die Qualität kann schwanken.</p>':'');
+const h1w=w=>`<h1 style="font-size:min(15vw,${Math.max(34,Math.min(88,Math.floor(330/(.6*w.w.length))))}px)"><small class=meta style="color:inherit">${w.p}, Rang ${w.r}</small>${w.w}</h1>`;
+async function lernen(){cur=cur||nextW();const w=cur;
+if(!w.e&&!w.fail){V.innerHTML=h1w(w)+'<p class=mu>Beispiele werden geladen ...</p>';try{await enrich(w)}catch(e){w.fail=1}if(cur!==w)return}
+V.innerHTML=h1w(w)+`<button data-s="${w.w}">Wort anhören</button>${rev&&w.t?`<p class=ex><b>${w.t}</b></p>`:''}`+(w.e?sentence(w,rev):`<p class=no>Keine Verbindung zur Satzquelle. Ohne Internet gibt es nur bereits geladene Wörter.</p><button onclick="cur.fail=0;lernen()">Erneut versuchen</button>`)+gr(w)+(rev?`<div class=row><button class=no onclick=ans(0)>Nochmal</button><button class=ok onclick=ans(1)>Gewusst</button></div>`:`<button class=pri onclick="rev=1;lernen()">Übersetzung zeigen</button>`)}
 function ans(k){const w=cur.w,lv=k?(S[w]?S[w].lv:0)+1:0;S[w]={lv,due:Date.now()+(k?IV[Math.min(lv-1,4)]*D:6e5)};sv();cur=null;rev=0;lernen()}
-function woerter(){const k=w=>S[w.w]&&S[w.w].lv>=1;
-V.innerHTML=`<h1>Wörter</h1><div class=seg>${['alle','offen','gelernt'].map(f=>`<button class="${f==fl?'on':''}" onclick="fl='${f}';woerter()">${f}</button>`).join('')}</div>`+W.map((w,i)=>[w,i]).filter(([w])=>fl=='alle'||(fl=='gelernt')==!!k(w)).map(([w,i])=>`<details class=card><summary><span class=n>${i+1}</span><span class=t><b>${w.w}</b> <span class=mu>${w.t}</span></span><i class="dot ${k(w)?'ok':''}"></i></summary>${sentence(w,1)}${gr(w)}</details>`).join('')+`<button class=no onclick="confirm('Fortschritt löschen?')&&(S={},sv(),cur=null,woerter())">Fortschritt zurücksetzen</button>`}
+let sq='',lim=60;
+async function opn(i){const w=W[i];if(w.e||w.fail)return;const x=$('#x'+w.r);x.innerHTML='<p class=mu>Wird geladen ...</p>';try{await enrich(w);x.innerHTML=sentence(w,1);$('#t'+w.r).textContent=w.t||''}catch(e){w.fail=1;x.innerHTML='<p class=no>Keine Verbindung zur Satzquelle.</p>'}}
+async function pre(){const td=W.filter(w=>!w.e&&!w.fail).slice(0,25);let n=0;for(const w of td){$('#pb').textContent='Lade '+(++n)+' von '+td.length+' ...';try{await enrich(w)}catch(e){w.fail=1}await new Promise(r=>setTimeout(r,400))}woerter()}
+function woerter(){const k=w=>S[w.w]&&S[w.w].lv>=1,z=sq.toLowerCase(),L=W.filter(w=>(fl=='alle'||(fl=='gelernt')==!!k(w))&&(!z||w.w.includes(z)||(w.t||'').toLowerCase().includes(z)));
+V.innerHTML=`<h1><small class=meta style="color:inherit">nach Häufigkeit</small>Wörter</h1><input id=sq placeholder="Wort oder Übersetzung suchen" value="${sq}" onchange="sq=this.value;lim=60;woerter()"><div class=seg>${['alle','offen','gelernt'].map(f=>`<button class="${f==fl?'on':''}" onclick="fl='${f}';lim=60;woerter()">${f}</button>`).join('')}</div><p class=mu>${L.length} Treffer</p>`+L.slice(0,lim).map(w=>`<details class=card ontoggle="if(this.open)opn(${W.indexOf(w)})"><summary><span class=n>${w.r}</span><span class=t><b>${w.w}</b> <span class=mu id=t${w.r}>${w.t||''}</span></span><i class="dot ${k(w)?'ok':''}"></i></summary><div id=x${w.r}>${w.e?sentence(w,1):'<p class=mu>Wird beim Öffnen geladen ...</p>'}</div>${gr(w)}</details>`).join('')+(L.length>lim?`<button onclick="lim+=60;woerter()">Mehr anzeigen</button>`:'')+`<hr><button id=pb onclick=pre()>Nächste 25 Wörter vorladen</button><p class=mu>Vorgeladene Wörter stehen danach auch offline bereit.</p><button class=no onclick="confirm('Fortschritt löschen?')&&(S={},sv(),cur=null,woerter())">Fortschritt zurücksetzen</button>`}
 function chk(said){const t=tw[lv],c=cmp(t,said);res=`<p class=ex>${c.h}</p><p class=mu>${tw[dk[lv]]}</p>`+(c.miss.length?`<p>Abweichungen: <b>${c.miss.join(', ')}</b>. Höre den Satz noch einmal und achte auf diese Wörter.</p>`:'<p class=ok><b>Richtig.</b></p>')+(um=='sprechen'?`<p class=mu>Erkannt: ${said}</p>`+TP.filter(x=>x[0].test(t)).map(x=>`<p class=mu>${x[1]}</p>`).join(''):'');ueben()}
-function ueben(nw){if(nw||!tw){tw=W[Math.floor(Math.random()*W.length)];res=''}const h=um=='hoeren',t=tw[lv],sg=(a,v,f)=>`<div class=seg>${a.map(([k,x])=>`<button class="${k==v?'on':''}" onclick="${f(k)}">${x}</button>`).join('')}</div>`;
+function ueben(nw){if(nw||!tw){tw=rnd(P());res=''}const h=um=='hoeren',t=tw[lv],sg=(a,v,f)=>`<div class=seg>${a.map(([k,x])=>`<button class="${k==v?'on':''}" onclick="${f(k)}">${x}</button>`).join('')}</div>`;
 V.innerHTML=`<h1>Üben</h1>`+sg([['hoeren','Hören'],['sprechen','Sprechen']],um,k=>`um='${k}';res='';ueben()`)+sg([['e','A2'],['e2','B2']],lv,k=>`lv='${k}';res='';ueben()`)+`<div class=card>`+(h?`<button class=pri data-s="${t}">Satz abspielen</button><input id=i placeholder="Was hast du gehört?" autocapitalize=off><button onclick="chk($('#i').value)">Prüfen</button>`:`<p class=ex>${t}</p><p class=mu>${tw[dk[lv]]}</p><button data-s="${t}">Vorbild anhören</button><button class=pri onclick="listen(chk)">Satz sprechen</button>`)+`<div>${res}</div></div><button onclick="ueben(1)">Nächster Satz</button>`}
 let EX=[],es=null,ea={},ech=0;
 fetch('exercises.json').then(r=>r.json()).then(d=>{EX=d;EX.forEach((x,i)=>x.s.forEach((q,j)=>q.k=i+':'+j))});
@@ -101,7 +115,7 @@ const mkrv=()=>({n:'Fehler wiederholen',r:'<p>Hier stehen deine schwächsten Auf
 function konj(n){if(n||!cj){const P=[];CJ.forEach((c,i)=>PN.forEach((_,p)=>{for(let r=0;r<(er['c:'+i+':'+p]?4:1);r++)P.push([i,p])}));const[i,p]=rnd(P);cj={i,p,a:'',done:0}}const c=CJ[cj.i],p=cj.p;
 V.innerHTML=back+`<h1>Konjugation</h1><div class=card><p class=mu>${c.t}</p><p class=ex><b>${c.v}</b>, ${PN[p]}</p><input id=cv autocapitalize=off autocomplete=off value="${cj.a}" ${cj.done?'disabled':''}>`+(cj.done?`<p class=${cj.ok?'ok':'no'}><b>${cj.ok?'Richtig':'Falsch, richtig ist: '+c.f[p]}</b></p>${!cj.ok&&nm(cj.a).join()==nm(c.f[p]).join()?'<p class=mu>Fast: nur ein Akzent fehlt oder ist falsch. Beispiel: hablo (Präsens) und habló (Indefinido).</p>':''}<button class=pri onclick="konj(1)">Weiter</button>`:`<button class=pri onclick="kchk()">Prüfen</button>`)+`</div>`}
 function kchk(){cj.a=$('#cv').value.trim().toLowerCase();cj.ok=cj.a==CJ[cj.i].f[cj.p];cj.done=1;miss('c:'+cj.i+':'+cj.p,cj.ok);konj()}
-function satz(n){if(n||!sb){const w=rnd(W),l=rnd(['e','e2']),t=w[l],a=t.split(' ');sb={t,d:w[dk[l]],a,p:a.map((x,i)=>i).sort(()=>Math.random()-.5),u:[],done:0}}const b=sb;
+function satz(n){if(n||!sb){const w=rnd(P()),l=rnd(['e','e2']),t=w[l],a=t.split(' ');sb={t,d:w[dk[l]],a,p:a.map((x,i)=>i).sort(()=>Math.random()-.5),u:[],done:0}}const b=sb;
 V.innerHTML=back+`<h1>Satzbau</h1><div class=card><p class=mu>${b.d}</p><div class=sbw>${b.u.map(i=>`<button class=ok ${b.done?'disabled':''} onclick="sbm(${i},1)">${b.a[i]}</button>`).join('')||'<span class=mu>Tippe die Wörter in der richtigen Reihenfolge an.</span>'}</div><hr><div>${b.p.filter(i=>!b.u.includes(i)).map(i=>`<button onclick="sbm(${i},0)">${b.a[i]}</button>`).join('')}</div>`+(b.done?`<hr><p class=${b.ok?'ok':'no'}><b>${b.ok?'Richtig':'Nicht ganz'}</b></p><p class=ex>${b.t}</p>${b.ok?'':'<p class=mu>Manchmal ist auch eine andere Reihenfolge möglich. Vergleiche mit dem Vorbild.</p>'}<button data-s="${b.t}">Anhören</button><button class=pri onclick="satz(1)">Weiter</button>`:b.u.length==b.a.length?`<button class=pri onclick="sb.done=1;sb.ok=sb.u.map(i=>sb.a[i]).join(' ')==sb.t;satz()">Prüfen</button>`:'')+`</div>`}
 function sbm(i,r){sb.u=r?sb.u.filter(x=>x!=i):[...sb.u,i];satz()}
 function fjag(n){if(n||!fj){const x=rnd(EX),q=rnd(x.s),good=Math.random()<.5;fj={q,good,o:good?q.a:rnd(q.o.map((_,k)=>k).filter(k=>k!=q.a)),done:0}}const q=fj.q;
@@ -113,6 +127,6 @@ const x=sec(),sc=x.s.filter((q,i)=>ea[i]===q.a).length;
 V.innerHTML=back+`<h1>${x.n}</h1>`+(x.s.length?`<details class=card><summary><b>Merkkasten</b></summary>${x.r}</details>`+(ech?`<div class=card><p class=ex><b>${sc} von ${x.s.length} richtig</b></p><button onclick="ea={};ech=0;gram()">Nochmal</button></div>`:'')+x.s.map(qh).join('')+(ech?'':`<button class=pri onclick="ech=1;rec();gram();scrollTo(0,0)">Prüfen</button>`):'<p class=ex>Keine offenen Fehler. Löse zuerst ein paar Themen oder Fehlerjagd-Aufgaben.</p>')}
 const T={lernen,woerter,ueben,gram},L={lernen:'Lernen',woerter:'Wörter',ueben:'Üben',gram:'Grammatik'};
 function go(t){T[t]();$('#n').innerHTML=Object.keys(T).map(k=>`<button class="${k==t?'on':''}" onclick="go('${k}')">${L[k]}</button>`).join('')}
-fetch('words.json').then(r=>r.json()).then(d=>{W=d;go('lernen')});
+fetch('vocab.json').then(r=>r.json()).then(d=>{W=d;W.forEach(w=>{if(EN[w.w])Object.assign(w,EN[w.w],{auto:1})});go('lernen')});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
