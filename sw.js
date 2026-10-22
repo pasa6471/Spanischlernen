@@ -1,4 +1,4 @@
-const C='palabra-9',F=['./','index.html','vocab.json','exercises.json','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','apple-touch-icon.png'];
+const C='palabra-10',F=['./','index.html','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','apple-touch-icon.png'];
 addEventListener('install',e=>{skipWaiting();e.waitUntil(caches.open(C).then(c=>Promise.all(F.map(f=>c.add(f).catch(()=>0)))))});
 addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!=C).map(x=>caches.delete(x)))).then(()=>clients.claim())));
 addEventListener('fetch',e=>{const r=e.request;if(r.method!='GET'||/tatoeba|mymemory/.test(r.url))return;
